@@ -2,24 +2,24 @@ extends _layout
 block content
 	.out
 		include layout/header.pug
-		.maincontent
-			section#s_first
+		#maincontent
+			section.page#first
 				include module/jumbotron.pug
-			section#s_second
+			section.page#second(data-aos="fade-up", data-aos-offset="300", data-aos-duration="600", data-aos-delay="1300")
 				include module/material.pug
-			section#s_third
+			section.page#third
 				include module/cupon.pug
-			section#s_fourth
+			section.page#fourth
 				include module/landlord.pug
-			section#s_fifth
+			section.page#fifth
 				include module/pack.pug
-			section#s_sixth
+			section.page#sixth
 				include module/assortment.pug
-			section#s_seventh
+			section.page#seventh
 				include module/gallery.pug
-			section#s_eighth
+			section.page#eighth
 				include module/map.pug
-			section#s_nineth
+			section.page
 				include layout/footer.pug
 		.nav_scroll
 			a(href="#").nav_scroll__btn.nav_scroll__btn_up

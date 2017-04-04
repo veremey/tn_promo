@@ -1,8 +1,8 @@
-header.header
+header.header(data-aos="flip-down", data-aos-delay="300")
 	.layout__inner
-		.definition
+		.definition.js-nav
 			.head
-				a(href="/").logo
+				a(href="#first" ).logo
 					img(src='static/img/logo.svg', alt='logo')
 				.select.js-select
 					.select__text.js-select-text
@@ -18,16 +18,16 @@ header.header
 							span en
 			nav.navigate
 				ul.menu
-					li.menu__list
-						a(href="#").menu__link Статьи
-					li.menu__list
-						a(href="#").menu__link.red_item С к и д к и
+					li.menu__list(data-aos="zoom-in", data-aos-delay="350")
+						a(href="#second").menu__link Статьи
+					li.menu__list(data-aos="zoom-in", data-aos-delay="400")
+						a(href="#third").menu__link.red_item С к и д к и
 							span  %
-					li.menu__list.is_active
-						a(href="#").menu__link Мнение домовладельцев
-					li.menu__list
-						a(href="#").menu__link Преимущества
-					li.menu__list
-						a(href="#").menu__link Ассортимент
-					li.menu__list
-						a(href="#").menu__link Контакты
+					li.menu__list(data-aos="zoom-in", data-aos-delay="450")
+						a(href="#fourth").menu__link Мнение домовладельцев
+					li.menu__list(data-aos="zoom-in", data-aos-delay="500")
+						a(href="#fifth").menu__link Преимущества
+					li.menu__list(data-aos="zoom-in", data-aos-delay="550")
+						a(href="#sixth").menu__link Ассортимент
+					li.menu__list(data-aos="zoom-in", data-aos-delay="600")
+						a(href="#seventh").menu__link Контакты

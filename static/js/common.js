@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	AOS.init();
 
 	if($('.carusel__item').length > 1){
 		$('.carusel').slick({

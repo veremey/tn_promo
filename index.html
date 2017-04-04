@@ -8,7 +8,7 @@
     <meta content="telephone=no" name="format-detection">
     <link rel="icon" href="static/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" media="all" href="static/css/jquery.fancybox.min.css">
-    <link rel="stylesheet" media="all" href="static/css/jquery.fullPage.css">
+    <link rel="stylesheet" media="all" href="static/css/aos.css">
     <link rel="stylesheet" media="all" href="static/css/style.css">
     <script src="static/js/lib/jquery.js"></script>
     <script src="static/js/lib/jquery.validate.min.js"></script>
@@ -17,21 +17,21 @@
     <script src="static/js/lib/jquery.fancybox.min.js"></script>
     <script src="static/js/lib/jquery.mCustomScrollbar.js"></script>
     <script src="static/js/lib/jquery.formatter.min.js"></script>
-    <script src="static/js/lib/jquery.fullPage.min.js"></script>
+    <script src="static/js/lib/aos.js"></script>
     <script src="static/js/scroll.js"></script>
     <script src="static/js/init-select.js"></script>
     <script src="static/js/init-validate.js"></script>
     <script src="static/js/init-scroll.js"></script>
-    <script src="static/js/init-fullPage"></script>
+    <script src="static/js/init-navSwitcher.js"></script>
     <script src="static/js/common.js"></script>
   </head>
   <body>
     <!--BEGIN out-->
     <div class="out">
-      <header class="header">
+      <header class="header" data-aos="flip-down" data-aos-delay="300">
         <div class="layout__inner">
-          <div class="definition">
-            <div class="head"><a class="logo" href="/"><img src="static/img/logo.svg" alt="logo"></a>
+          <div class="definition js-nav">
+            <div class="head"><a class="logo" href="#first"><img src="static/img/logo.svg" alt="logo"></a>
               <div class="select js-select">
                 <div class="select__text js-select-text"><img src="static/img/flag-ua.jpg" alt="ua"><span>Укр</span></div>
                 <input class="js-select-input" type="hidden" value="">
@@ -43,22 +43,22 @@
             </div>
             <nav class="navigate">
               <ul class="menu">
-                <li class="menu__list"><a class="menu__link" href="#">Статьи</a></li>
-                <li class="menu__list"><a class="menu__link red_item" href="#">С к и д к и<span> %</span></a></li>
-                <li class="menu__list is_active"><a class="menu__link" href="#">Мнение домовладельцев</a></li>
-                <li class="menu__list"><a class="menu__link" href="#">Преимущества</a></li>
-                <li class="menu__list"><a class="menu__link" href="#">Ассортимент</a></li>
-                <li class="menu__list"><a class="menu__link" href="#">Контакты</a></li>
+                <li class="menu__list" data-aos="zoom-in" data-aos-delay="350"><a class="menu__link" href="#second">Статьи</a></li>
+                <li class="menu__list" data-aos="zoom-in" data-aos-delay="400"><a class="menu__link red_item" href="#third">С к и д к и<span> %</span></a></li>
+                <li class="menu__list" data-aos="zoom-in" data-aos-delay="450"><a class="menu__link" href="#fourth">Мнение домовладельцев</a></li>
+                <li class="menu__list" data-aos="zoom-in" data-aos-delay="500"><a class="menu__link" href="#fifth">Преимущества</a></li>
+                <li class="menu__list" data-aos="zoom-in" data-aos-delay="550"><a class="menu__link" href="#sixth">Ассортимент</a></li>
+                <li class="menu__list" data-aos="zoom-in" data-aos-delay="600"><a class="menu__link" href="#seventh">Контакты</a></li>
               </ul>
             </nav>
           </div>
         </div>
       </header>
-      <div class="maincontent">
-        <section id="s_first">
-          <div class="jumbotron">
+      <div id="maincontent">
+        <section class="page" id="first">
+          <div class="jumbotron" data-aos="slide-down" data-aos-delay="550" data-aos-duration="600">
             <div class="layout__inner">
-              <form class="feedback js-validate" action="/" method="post" name="comment" autocomplete="on">
+              <form class="feedback js-validate" action="/" method="post" name="comment" autocomplete="on" data-aos="zoom-out-up" data-aos-delay="1000" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
                 <p>обратная связь</p>
                 <fieldset class="feedback__field">
                   <input type="text" name="name">
@@ -105,12 +105,12 @@
             </div>
           </div>
         </section>
-        <section id="s_second">
-          <section class="section">
+        <section class="page" id="second" data-aos="fade-up" data-aos-offset="300" data-aos-duration="600" data-aos-delay="1300">
+          <section class="section" data-aos="fade-up" data-aos-offset="300">
             <div class="layout__inner">
               <h4 class="section__title">Полезные материалы</h4>
               <div class="partical">
-                <div class="partical__item">
+                <div class="partical__item" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600">
                   <div class="partical__pic"><img class="partical__img" src="static/img/material/01.jpg" alt="изображение"></div>
                   <div class="partical__content">
                     <div class="partical__head">
@@ -119,7 +119,7 @@
                     </div><a class="partical__btn" href="/renov.html">смотреть</a>
                   </div>
                 </div>
-                <div class="partical__item">
+                <div class="partical__item" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600">
                   <div class="partical__pic"><img class="partical__img" src="static/img/material/02.jpg" alt="изображение"></div>
                   <div class="partical__content">
                     <div class="partical__head">
@@ -128,7 +128,7 @@
                     </div><a class="partical__btn" href="/renov.html">смотреть</a>
                   </div>
                 </div>
-                <div class="partical__item">
+                <div class="partical__item" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600">
                   <div class="partical__pic"><img class="partical__img" src="static/img/material/03.jpg" alt="изображение"></div>
                   <div class="partical__content">
                     <div class="partical__head">
@@ -137,7 +137,7 @@
                     </div><a class="partical__btn" href="/renov.html">смотреть</a>
                   </div>
                 </div>
-                <div class="partical__item">
+                <div class="partical__item" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600">
                   <div class="partical__pic"><img class="partical__img" src="static/img/material/04.jpg" alt="изображение"></div>
                   <div class="partical__content">
                     <div class="partical__head">
@@ -150,14 +150,14 @@
             </div>
           </section>
         </section>
-        <section id="s_third">
-          <div class="cupon"><img class="cupon__bg" src="static/img/cupon.png" alt=""><img class="cupon__logo" src="static/img/cupon-logo.png" alt="">
+        <section class="page" id="third">
+          <div class="cupon" data-aos="zoom-in-left"><img class="cupon__bg" src="static/img/cupon.png" alt=""><img class="cupon__logo" src="static/img/cupon-logo.png" alt="">
             <div class="layout__inner">
               <div class="cupon__context">
                 <div class="cupon__get">
                   <h4 class="cupon__title">Получить купон <br> на скидку</h4>
                   <p><strong>5% скидки</strong> на любые товары ТЕХНОНИКОЛЬ SHINGLAS</p>
-                  <p><strong>10% скидки</strong> при покупке от 100 м² многослойной черепицы</p><a href="#s_eighth">Где я могу использовать купон?</a>
+                  <p><strong>10% скидки</strong> при покупке от 100 м² многослойной черепицы</p><a href="#eighth">Где я могу использовать купон?</a>
                 </div>
                 <div class="cupon__take">
                   <div class="cupon__header">
@@ -182,12 +182,12 @@
             </div>
           </div>
         </section>
-        <section id="s_fourth">
+        <section class="page" id="fourth">
           <section class="section">
             <div class="layout__inner">
-              <h4 class="section__title">Мнение домовладельцев</h4>
+              <h4 class="section__title" data-aos="fade-up" data-aos-offset="100">Мнение домовладельцев</h4>
               <div class="partical">
-                <div class="partical__item partical_shadow">
+                <div class="partical__item partical_shadow" data-aos="fade-up" data-aos-offset="200">
                   <div class="partical__pic"><img class="partical__img" src="static/img/landlord/01.jpg" alt="изображение"></div>
                   <div class="partical__content">
                     <div class="partical__head">
@@ -196,7 +196,7 @@
                     </div><a class="partical__btn" href="/renov.html">смотреть</a>
                   </div>
                 </div>
-                <div class="partical__item partical_shadow">
+                <div class="partical__item partical_shadow" data-aos="fade-up" data-aos-offset="200">
                   <div class="partical__pic"><img class="partical__img" src="static/img/landlord/02.jpg" alt="изображение"></div>
                   <div class="partical__content">
                     <div class="partical__head">
@@ -209,26 +209,26 @@
             </div>
           </section>
         </section>
-        <section id="s_fifth">
+        <section class="page" id="fifth">
           <div class="pack" id="pack">
-            <div class="pack__pic"><img class="pack__pic_big" src="static/img/skew.png" alt="изображение"><img class="pack__pic_min" src="static/img/pack.png" alt="изображение"></div>
+            <div class="pack__pic" data-aos="fade-up" data-aos-offset="200"><img class="pack__pic_big" src="static/img/skew.png" alt="изображение"><img class="pack__pic_min" src="static/img/pack.png" alt="изображение"></div>
             <div class="edge">
               <ul class="edge__list">
-                <li class="edge__item"><img src="static/img/edge-01.png" alt="изображение"><strong>многослойность</strong></li>
-                <li class="edge__item"><img src="static/img/edge-02.png" alt="изображение"><strong>трёхмерный <br> цвет и фактура</strong></li>
-                <li class="edge__item"><img src="static/img/edge-03.png" alt="изображение"><strong>долговечность</strong></li>
-                <li class="edge__item"><img src="static/img/edge-04.png" alt="изображение"><strong>на основе <br> базальта</strong></li>
+                <li class="edge__item" data-aos="zoom-in" data-aos-delay="350"><img src="static/img/edge-01.png" alt="изображение"><strong>многослойность</strong></li>
+                <li class="edge__item" data-aos="zoom-in" data-aos-delay="400"><img src="static/img/edge-02.png" alt="изображение"><strong>трёхмерный <br> цвет и фактура</strong></li>
+                <li class="edge__item" data-aos="zoom-in" data-aos-delay="450"><img src="static/img/edge-03.png" alt="изображение"><strong>долговечность</strong></li>
+                <li class="edge__item" data-aos="zoom-in" data-aos-delay="500"><img src="static/img/edge-04.png" alt="изображение"><strong>на основе <br> базальта</strong></li>
               </ul>
               <p class="edge__desk">Гибкая черепица – это битумный материал, представляющий собой прямоугольные <br> модули (гонты) небольших размеров, с фигурными вырезами по одному краю, которые на <br> кровле укладываются рядами внахлест. Он идеален в качестве покрытия на скатных <br> крышах, как простой, так и сложной конфигурации, вплоть до куполов.</p>
             </div>
           </div>
         </section>
-        <section id="s_sixth">
+        <section class="page" id="sixth">
           <section class="section bg-dark">
-            <h4 class="section__title">Ассортимент</h4>
+            <h4 class="section__title" data-aos="fade-up" data-aos-offset="100">Ассортимент</h4>
             <div class="layout__inner">
               <div class="clear">
-                <div class="cutting">
+                <div class="cutting" data-aos="fade-right" data-aos-offset="200">
                   <div class="cutting__header">
                     <p class="cutting__title">Формы нарезки черепицы</p>
                   </div>
@@ -267,7 +267,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="assort">
+                <div class="assort" data-aos="fade-left" data-aos-offset="200">
                   <div class="assort__wrap">
                     <div class="assortment" id="slider0" data-up="0">
                       <div class="assortment__slide">
@@ -1641,27 +1641,27 @@
             </div>
           </section>
         </section>
-        <section id="s_seventh">
+        <section class="page" id="seventh">
           <section class="section">
-            <h3 class="section__title">Фотогалерея</h3>
-            <div class="gallery"><a class="gallery__link" href="static/img/gallery/01.jpg" data-fancybox="gallery">
-                <div class="shadow"></div><img src="static/img/gallery/01.jpg" alt="изображение"></a><a class="gallery__link" href="static/img/gallery/02.jpg" data-fancybox="gallery">
-                <div class="shadow"></div><img src="static/img/gallery/02.jpg" alt="изображение"></a><a class="gallery__link" href="static/img/gallery/03.jpg" data-fancybox="gallery">
-                <div class="shadow"></div><img src="static/img/gallery/03.jpg" alt="изображение"></a><a class="gallery__link" href="static/img/gallery/04.jpg" data-fancybox="gallery">
-                <div class="shadow"></div><img src="static/img/gallery/04.jpg" alt="изображение"></a><a class="gallery__link" href="static/img/gallery/05.jpg" data-fancybox="gallery">
-                <div class="shadow"></div><img src="static/img/gallery/05.jpg" alt="изображение"></a><a class="gallery__link" href="static/img/gallery/06.jpg" data-fancybox="gallery">
-                <div class="shadow"></div><img src="static/img/gallery/06.jpg" alt="изображение"></a><a class="gallery__link" href="static/img/gallery/07.jpg" data-fancybox="gallery">
-                <div class="shadow"></div><img src="static/img/gallery/07.jpg" alt="изображение"></a><a class="gallery__link" href="static/img/gallery/08.jpg" data-fancybox="gallery">
-                <div class="shadow"></div><img src="static/img/gallery/08.jpg" alt="изображение"></a><a class="gallery__link" href="static/img/gallery/08.jpg" data-fancybox="gallery">
+            <h3 class="section__title" data-aos="fade-up" data-aos-offset="100">Фотогалерея</h3>
+            <div class="gallery"><a class="gallery__link" href="static/img/gallery/01.jpg" data-fancybox="gallery" data-aos="fade-left" data-aos-offset="200" data-aos-delay="200">
+                <div class="shadow"></div><img src="static/img/gallery/01.jpg" alt="изображение"></a><a class="gallery__link" href="static/img/gallery/02.jpg" data-fancybox="gallery" data-aos="fade-left" data-aos-offset="200" data-aos-delay="200">
+                <div class="shadow"></div><img src="static/img/gallery/02.jpg" alt="изображение"></a><a class="gallery__link" href="static/img/gallery/03.jpg" data-fancybox="gallery" data-aos="fade-left" data-aos-offset="200" data-aos-delay="200">
+                <div class="shadow"></div><img src="static/img/gallery/03.jpg" alt="изображение"></a><a class="gallery__link" href="static/img/gallery/04.jpg" data-fancybox="gallery" data-aos="fade-left" data-aos-offset="200" data-aos-delay="200">
+                <div class="shadow"></div><img src="static/img/gallery/04.jpg" alt="изображение"></a><a class="gallery__link" href="static/img/gallery/05.jpg" data-fancybox="gallery" data-aos="fade-left" data-aos-offset="200" data-aos-delay="200">
+                <div class="shadow"></div><img src="static/img/gallery/05.jpg" alt="изображение"></a><a class="gallery__link" href="static/img/gallery/06.jpg" data-fancybox="gallery" data-aos="fade-left" data-aos-offset="200" data-aos-delay="200">
+                <div class="shadow"></div><img src="static/img/gallery/06.jpg" alt="изображение"></a><a class="gallery__link" href="static/img/gallery/07.jpg" data-fancybox="gallery" data-aos="fade-left" data-aos-offset="200" data-aos-delay="200">
+                <div class="shadow"></div><img src="static/img/gallery/07.jpg" alt="изображение"></a><a class="gallery__link" href="static/img/gallery/08.jpg" data-fancybox="gallery" data-aos="fade-left" data-aos-offset="200" data-aos-delay="200">
+                <div class="shadow"></div><img src="static/img/gallery/08.jpg" alt="изображение"></a><a class="gallery__link" href="static/img/gallery/08.jpg" data-fancybox="gallery" data-aos="fade-left" data-aos-offset="200" data-aos-delay="200">
                 <div class="shadow"></div><img src="static/img/gallery/08.jpg" alt="изображение"></a>
             </div>
           </section>
         </section>
-        <section id="s_eighth">
+        <section class="page" id="eighth">
           <section class="map">
             <div class="layout">
               <h3 class="section__title mod_noul">
-                Где купить?<br><a class="cupon-top-link" href="#">Получить купон на скидку 10%</a></h3>
+                Где купить?<br><a class="cupon-top-link" href="#third">Получить купон на скидку 10%</a></h3>
               <div class="affiliate">
                 <div class="affiliate__item">
                   <div class="affiliate__scroll">
@@ -1679,7 +1679,7 @@
                 <div class="affiliate__item affiliate-dubl">
                   <div class="affiliate__scroll">
                     <div class="affiliate__content">
-                      <h6 class="affiliate__title"><a href="#">ООО «РКЦ-Буд»</a></h6>
+                      <h6 class="affiliate__title"><a href="#">ТОО «Торговый дом Арсенал Азия Алматы»</a></h6>
                       <p>Днепропетровск, пр. Гагарина, 90</p>
                       <p><a href="dnepr@rkc.biz.ua">dnepr@rkc.biz.ua</a></p>
                       <p><a href="rkcbud.com.ua">rkcbud.com.ua</a></p>
@@ -1892,7 +1892,7 @@
             <div id="map"></div>
           </section>
         </section>
-        <section id="s_nineth">
+        <section class="page">
           <footer class="footer">
             <div class="layout__inner">
               <div class="definition">

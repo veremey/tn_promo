@@ -2,10 +2,10 @@
 
 section.section
 	.layout__inner
-		h4.section__title Мнение домовладельцев
+		h4.section__title(data-aos="fade-up", data-aos-offset="100") Мнение домовладельцев
 		.partical
 			each material in materials
-				.partical__item.partical_shadow
+				.partical__item.partical_shadow(data-aos="fade-up", data-aos-offset="200")
 					.partical__pic
 						img(src=material.item.pic, alt='изображение').partical__img
 					.partical__content

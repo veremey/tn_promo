@@ -1,8 +1,8 @@
 -var gal = ['static/img/gallery/01.jpg', 'static/img/gallery/02.jpg', 'static/img/gallery/03.jpg', 'static/img/gallery/04.jpg', 'static/img/gallery/05.jpg', 'static/img/gallery/06.jpg', 'static/img/gallery/07.jpg', 'static/img/gallery/08.jpg', 'static/img/gallery/08.jpg', ]
 section.section
-	h3.section__title Фотогалерея
+	h3.section__title(data-aos="fade-up", data-aos-offset="100") Фотогалерея
 	.gallery
 		each pic in gal
-			a(href=pic, data-fancybox="gallery").gallery__link
+			a(href=pic, data-fancybox="gallery", data-aos="fade-left", data-aos-offset="200", data-aos-delay="200").gallery__link
 				.shadow
 				img(src=pic, alt='изображение')

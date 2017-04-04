@@ -1,6 +1,6 @@
-.jumbotron
+.jumbotron(data-aos="slide-down", data-aos-delay="550", data-aos-duration="600")
 	.layout__inner
-		form(action="/", method="post", name='comment', autocomplete='on').feedback.js-validate
+		form(action="/", method="post", name='comment', autocomplete='on', data-aos="zoom-out-up", data-aos-delay="1000", data-aos-offset="200", data-aos-easing="ease-in-sine", data-aos-duration="600").feedback.js-validate
 			p обратная связь
 			fieldset.feedback__field
 				input(type='text', name='name')
@@ -22,8 +22,6 @@
 					.mail__text
 						h5.mail__title Благодарим Вас!
 						p.mail__desc Ваше сообщение успешно отправлено.
-
-
 
 	.carusel
 		.carusel__item

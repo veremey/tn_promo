@@ -4,10 +4,10 @@
 
 
 section.section.bg-dark
-	h4.section__title Ассортимент
+	h4.section__title(data-aos="fade-up", data-aos-offset="100") Ассортимент
 	.layout__inner
 		.clear
-			.cutting
+			.cutting(data-aos="fade-right", data-aos-offset="200")
 				.cutting__header
 					p.cutting__title Формы нарезки черепицы
 				ul.cutting__list
@@ -22,7 +22,7 @@ section.section.bg-dark
 								span.cutting__img
 									#{cuts.item.pic}
 								p.cutting__desc #{cuts.item.title}
-			.assort
+			.assort(data-aos="fade-left", data-aos-offset="200")
 				.assort__wrap
 					include ../slider/akkord.pug
 					include ../slider/sonata.pug
