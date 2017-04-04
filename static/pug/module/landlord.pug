@@ -1,0 +1,15 @@
+-var materials = [{item: {pic: 'static/img/landlord/01.jpg', sub: 'Московская область', title: 'Семья Тимченко'}}, {item: {pic: 'static/img/landlord/02.jpg', sub: 'Пенсионер-дачник. Калуга', title: 'Иван Дмитриевич'}}];
+
+section.section
+	.layout__inner
+		h4.section__title Мнение домовладельцев
+		.partical
+			each material in materials
+				.partical__item.partical_shadow
+					.partical__pic
+						img(src=material.item.pic, alt='изображение').partical__img
+					.partical__content
+						.partical__head
+							h3.partical__title !{material.item.title}
+							h5.partical__subtitle #{material.item.sub}
+						a(href="/renov.html").partical__btn смотреть

@@ -1,0 +1,15 @@
+-var materials = [{item: {pic: 'static/img/material/01.jpg', sub: 'Статья', title: 'Реновация кровли <br> от А до Я'}}, {item: {pic: 'static/img/material/02.jpg', sub: 'Статья', title: 'Сравнение кровельных <br> материалов'}}, {item: {pic: 'static/img/material/03.jpg', sub: 'Статья', title: 'Безопасный и комфортный дом. <br> Кровельные вопросы'}}, {item: {pic: 'static/img/material/04.jpg', sub: 'Статья', title: 'Как выбрать кровлю для <br> украинского дома'}}];
+
+section.section
+	.layout__inner
+		h4.section__title Полезные материалы
+		.partical
+			each material in materials
+				.partical__item
+					.partical__pic
+						img(src=material.item.pic, alt='изображение').partical__img
+					.partical__content
+						.partical__head
+							h5.partical__subtitle #{material.item.sub}
+							h3.partical__title !{material.item.title}
+						a(href="/renov.html").partical__btn смотреть

@@ -1,0 +1,31 @@
+.cupon
+	img(src="static/img/cupon.png", alt="").cupon__bg
+	img(src="static/img/cupon-logo.png", alt="").cupon__logo
+
+	.layout__inner
+		.cupon__context
+			.cupon__get
+				h4.cupon__title Получить купон <br> на скидку
+				p
+					strong 5% скидки
+					|  на любые товары ТЕХНОНИКОЛЬ SHINGLAS
+				p
+					strong 10% скидки
+					|  при покупке от 100 м² многослойной черепицы
+				a(href="#s_eighth") Где я могу использовать купон?
+			.cupon__take
+				.cupon__header
+					h4.cupon__discount скидка
+					a(href="/renov.html").cupon__link Условия акции
+				form(method='post', action='/', autocomplete='on').discount.js-validate
+					fieldset.discount__fieldset
+						input(type="text", name="email", placeholder="Ваша эл. почта").discount__email
+						//- label(for="email").discount__label Ваша эл. почта
+						button(type="submit").discount__btn.js-cupon-latter Получить купон
+					.mail.js-cupon-mail
+						a(href="#", data-close="js-cupon-mail").icon-close.js-close
+						.mail__content
+							img(src="static/img/mail-cupon.png", alt="")
+							.mail__text
+								h5.mail__title Проверьте свою почту
+								p.mail__desc Вам пришло письмо с купоном <br> на скидку от ТЕХНОНИКОЛЬ

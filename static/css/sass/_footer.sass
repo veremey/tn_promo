@@ -1,0 +1,58 @@
+// Normally footer styles
+
+.footer
+	background-color: #363636
+
+	.definition
+		height: 80px
+		border-bottom: 1px solid #5e5e5e
+		margin-bottom: 15px
+	.select
+		&:before
+			+s(icon-bird-white)
+	.menu__link,
+	.select__text,
+	.select__list span
+		color: #fff
+		&:hover
+			color: darken(#fff, 20%)
+	.select__list
+		background-color: #363636
+		&:hover
+			background-color: #5e5e5e
+.dev
+	color: #959595
+	+clr
+.copy
+	float: left
+	position: relative
+	padding-left: 40px
+	font-size: 13px
+	line-height: 1.1
+	+rr
+	&:before
+		content: '\00A9'
+		position: absolute
+		top: 0
+		left: 20px
+.developer
+	float: right
+	padding-bottom: 20px
+	p
+		display: inline-block
+		vertical-align: top
+		font-size: 12px
+		text-align: right
+		margin: 0 10px 0 0
+		line-height: 1.1
+	a
+		display: inline-block
+		vertical-align: top
+		text-transform: uppercase
+		font-size: 26px
+		line-height: 1
+		color: #fff
+		+pnb
+		+tr(.4s)
+		&:hover
+			color: darken(#fff, 20%)

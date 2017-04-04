@@ -1,0 +1,558 @@
+.partical
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	&__item
+		position: relative
+		width: 595px
+		height: 300px
+		margin-bottom: 10px
+		overflow: hidden
+		&:after
+			content: ''
+			+coverdiv
+			+tr(.8s)
+		&:nth-child(2n)
+			.partical__content
+				align-items: flex-start
+				text-align: left
+		&:hover:after
+			box-shadow: inset 0 0 500px 500px rgba(0, 0, 0, .3)
+
+	&__pic
+		position: relative
+		overflow: hidden
+		height: 300px
+	&__img
+		+vcenter
+		width: 100%
+		height: auto
+	&__content
+		display: flex
+		align-items: flex-end
+		justify-content: space-between
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		padding: 0 35px 35px
+		z-index: 5
+	&__head
+		display: inline-block
+		color: #fff
+	&__subtitle
+		font-size: 12px
+		text-transform: uppercase
+		letter-spacing: .2em
+		margin-bottom: 0
+		+rr
+	&__title
+		font-size: 24px
+		line-height: 28px
+		letter-spacing: .025em
+		margin: 0
+		+rr
+
+	&__btn
+		width: 144px
+		height: 50px
+		line-height: 46px
+		text-align: center
+		border-radius: 50px
+		border: 2px solid #fff
+		background-color: $n
+		color: #fff
+		font-size: 12px
+		letter-spacing: .2em
+		text-transform: uppercase
+		vertical-align: bottom
+		+rr
+		+tr(.4s)
+		&:hover
+			background-color: $red
+			border-color: $red
+	&_shadow
+		position: relative
+		height: 400px
+		&:after
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 0
+			right: 0
+			top: auto
+			height: 135px
+			background-color: rgba(0, 0, 0, .3)
+			box-shadow: 0 0 20px 20px rgba(0, 0, 0, .3)
+			+tr(.8s)
+		&:hover:after
+			height: 150px
+			box-shadow: 0 0 20px 20px rgba(0, 0, 0, .3)
+		.partical
+			&__pic
+				height: 525px
+			&__img
+				min-height: 100%
+				min-width: 100%
+				width: auto
+			&__content
+				flex-direction: column
+				text-align: right
+			&__title
+				font-size: 30px
+				line-height: 1.1
+				margin-bottom: 5px
+			&__subtitle
+				text-transform: none
+				font-size: 14px
+				letter-spacing: 0em
+				margin-bottom: 26px
+			&__btn
+				width: 196px
+
+.cupon
+	position: relative
+	overflow: hidden
+	background-color: $red
+	height: 435px
+	&__bg
+		+vcenter
+		height: 315px
+		width: auto
+		box-shadow: 0 0 32px 9px rgba(0, 0, 0, .13), inset 0 0 32px 9px rgba(0, 0, 0, .13)
+	&__logo
+		position: absolute
+		top: 50%
+		right: 0
+		+try(-50%)
+		pointer-events: none
+		z-index: 20
+	&__context
+		display: flex
+		align-items: center
+		text-align: right
+		padding: 75px 0
+		height: 435px
+	&__get
+		margin-left: 90px
+		p
+			font-size: 16px
+			line-height: 30px
+			letter-spacing: .01em
+			margin-bottom: 0
+			strong
+				color: $red
+				+rr
+		a
+			color: $red
+			display: inline-block
+			margin-top: 1em
+			border-bottom: 2px dotted $red
+			+tr(.4s)
+			&:hover
+				border-bottom: 2px dotted $n
+
+	&__title
+		font-size: 40px
+		line-height: 1
+		letter-spacing: -.025em
+		margin-bottom: .5em
+		+rr
+
+	&__take
+		text-align: left
+		width: 440px
+		margin-left: 222px
+
+	&__header
+		padding-left: 41px
+		margin-bottom: 35px
+	&__discount
+		position: relative
+		display: inline-block
+		font-size: 36px
+		margin: 0 25px 0 0
+		color: $red
+		text-transform: uppercase
+		+rr
+		&:before
+			content: ''
+			position: absolute
+			top: -25px
+			left: -135px
+			font-size: 236px
+			+rl
+			+s(icon-percent)
+	&__link
+		font-size: 12px
+		letter-spacing: .01em
+		color: #959595
+		text-transform: none
+		border-bottom: 1px solid #959595
+		+rl
+		+tr(.4s)
+		&:hover
+			border-bottom: 1px solid $n
+
+.cupon-top-link
+	display: inline-block
+	font-size: 16px
+	line-height: 26px
+	letter-spacing: .01em
+	color: $red
+	border-bottom: 2px dotted $red
+	+tr(.4s)
+	+try(-20px)
+	&:hover
+		border-bottom: 2px dottes $n
+
+.discount
+	position: relative
+	width: 100%
+
+	&__fieldset
+		position: relative
+		display: block
+		width: 370px
+		height: 62px
+		border: 1px solid #d7d7d7
+		border-radius: 62px
+		// overflow: hidden
+		// &.input--filled
+		// 	.discount
+		// 		&__label
+		// 			font-size: 12px
+		// 			top: 20%
+		// 		&__email
+		// 			padding-top: 10px
+	&__email
+		height: 100%
+		display: block
+		width: 210px
+		border: none
+		outline: none
+		padding: 0 22px
+		font-size: 16px
+		color: #000
+		border-radius: 50px
+		+tr(.4s)
+		+placeholder
+			font-size: 16px
+				color: #959595
+		&.has-error
+			right: auto
+			+ .has-error
+				top: -17px
+	// &__label
+	// 	position: absolute
+	// 	top: 50%
+	// 	left: 20px
+	// 	+try(-50%)
+	// 	font-size: 16px
+	// 	color: #959595
+	// 	+tr(.4s)
+	&__btn
+		position: absolute
+		width: 164px
+		height: 50px
+		top: 5px
+		right: 5px
+		border-radius: 50px
+		color: #fff
+		text-transform: uppercase
+		font-size: 12px
+		letter-spacing: .01em
+		outline: none
+		border: none
+		background-color: $cherry
+		+tr(.4s)
+		+rr
+		&:hover
+			background-color: $red
+	.mail
+		top: 80px
+		left: -20px
+		// display: block
+		padding-left: 35px
+		// width: 465px
+		&__text
+			flex: 0 1 260px
+.pack
+	position: relative
+	text-align: center
+	&__pic
+		position: relative
+		margin-bottom: 70px
+		&_big
+			width: 100%
+			height: auto
+		&_min
+			position: absolute
+			bottom: -35px
+			left: 50%
+			+trx(-50%)
+
+.edge
+	width: 1200px
+	text-align: center
+	margin: 0 auto 100px
+
+	&__list
+		font-size: 0
+		text-align: center
+		margin-bottom: 40px
+	&__item
+		display: inline-block
+		vertical-align: top
+		width: 215px
+		text-align: center
+		font-size: 0
+		img
+			display: inline-block
+			vertical-align: top
+			margin-bottom: 15px
+		strong
+			display: block
+			font-size: 24px
+			color: #6b1927
+			text-transform: uppercase
+			+d
+	&__desc
+		font-size: 16px
+		line-height: 26px
+		text-align: center
+
+.gallery
+	width: 1280px
+	margin: 0 auto
+	font-size: 0
+	&__link
+		position: relative
+		display: inline-block
+		width: 33.33%
+		height: 285px
+		overflow: hidden
+		border-right: 1px solid #fff
+		border-bottom: 1px solid #fff
+		+tr(.8s)
+		overflow: hidden
+		&:nth-child(3n)
+			border-right: none
+		&:before
+			content: ''
+			+vcenter
+			height: 20px
+			width: 4px
+			background-color: #FFF
+			opacity: 0
+			z-index: 10
+			+tr(.9s)
+		&:after
+			content: ''
+			+vcenter
+			height: 4px
+			width: 20px
+			background-color: #FFF
+			opacity: 0
+			z-index: 10
+			+tr(.9s)
+		&:hover
+			&:before,
+			&:after
+				opacity: 1
+			.shadow
+				opacity: 1
+				box-shadow: 0 0 0 10px #fff inset, 0 0 20px 300px rgba(0, 0, 0, .2) inset
+
+			img
+				z-index: 0
+
+		img
+			+vcenter
+
+.map
+	text-align: center
+#map
+	width: 100%
+	height: 540px
+
+.affiliate
+	position: relative
+	z-index: 10
+	+try(27px)
+	&.slick-slider
+		padding: 0 40px
+	.slick-list
+		margin: 0 6px 0
+		padding: 0 0px 57px
+		overflow: hidden
+	&__item
+		float: left
+		height: 252px
+		padding: 0 12px //new
+		vertical-align: top
+
+		text-align: left
+		&.affiliate-dubl
+			width: 580px
+	&__scroll
+		box-shadow: 0 44px 20px rgba(0, 0, 0, .1)
+		float: left
+		width: 278px//new
+		min-height: 252px
+		border: 1px solid #ebebeb
+	&__header
+		position: relative
+		display: flex
+		align-items: center
+		justify-content: center
+		height: 70px
+		margin-bottom: 15px
+		border-bottom: 1px solid #ebebeb
+		img
+			display: inline-block
+			max-width: 96%
+			max-width: 96%
+	&__heading
+		text-transform: uppercase
+		padding: 20px 40px
+		font-size: 16px
+		color: #000
+		+rr
+	&__title
+		position: relative
+		margin-bottom: 15px
+		font-size: 14px
+		line-height: 20px
+		color: #000
+		+rr
+
+		&:before
+			content: ''
+			position: absolute
+			bottom: 2px
+			left: -23px
+			+s(icon-location)
+		a
+			color: $red
+			display: inline-block
+			border-bottom: 1px solid $red
+			line-height: 1.1
+			font-size: 16px
+			+tr(.4s)
+			+rr
+			&:hover
+				border-bottom: 1px solid $n
+	&__content
+		padding: 15px 25px 20px 40px
+		p
+			font-size: 13px
+			color: #000
+			line-height: 24px
+			margin-bottom: 0
+			+rr
+		a
+			font-size: 13px
+			color: $red
+			line-height: 24px
+			border-bottom: 1px solid $red
+			+tr(.4s)
+			+rr
+			&:hover
+				border-bottom: 1px solid $n
+
+	&-filial
+		width: 290px
+		min-height: 250px
+		vertical-align: top
+		padding: 0
+		background-color: #f1f1f1
+		.affiliate
+			&__box
+				padding: 15px 25px 20px 40px
+				display: block
+				border: none
+				+tr(.4s)
+				&:hover
+					border: none
+					background-color: #e6e6e6
+			&__title
+				margin-bottom: 0
+				+rr
+		p
+			font-size: 13px
+			line-height: 20px
+			color: #000
+			+rr
+
+.nav_scroll
+	position: fixed
+	width: 60px
+	height: 132px
+	border-radius: 60px
+	background-color: #b2b2b2
+	right: 10px
+	z-index: 20
+	bottom: 10px
+	transition: bottom 600ms
+	overflow: hidden
+
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		top: 50%
+		left: 0
+		right: 0
+		height: 1px
+		+try(-50%)
+		background-color: #FFF
+
+	&__btn
+		position: absolute
+		left: 0
+		right: 0
+		height: calc(50% - 1px)
+		background-color: #b2b2b2
+		color: #FFFFFF
+		font-size: 9px
+		text-transform: uppercase
+		+tr(.4s)
+		&:hover
+			background-color: $red
+		&_up
+			top: 0
+			span
+				display: inline-block
+				position: absolute
+				top: 45px
+				left: 50%
+				+trx(-50%)
+				+rr
+				z-index: 5
+		&_down
+			top: 50%
+			span
+				display: inline-block
+				position: absolute
+				bottom: 45px
+				left: 50%
+				+trx(-50%)
+				+rr
+				z-index: 5
+
+.icon-up
+	position: absolute
+	top: 20px
+	left: 50%
+	+trx(-50%)
+	+s(scroll_up)
+	z-index: 5
+
+.icon-down
+	position: absolute
+	bottom: 20px
+	left: 50%
+	+trx(-50%)
+	+s(scroll_down)
+	z-index: 5

@@ -1,0 +1,24 @@
+-var header = [{item:{pic: 'static/img/assortment/akkord/01.jpg', data: 'static/img/assortment/akkord/01.png', color: 'арахис', serial: 'классик', collection: 'румба', type: 'однослойная'}}, {item:{pic: 'static/img/assortment/akkord/02.jpg', data: 'static/img/assortment/akkord/02.png', color: 'миндаль', serial: 'классик', collection: 'румба', type: 'однослойная'}}, {item:{pic: 'static/img/assortment/akkord/03.jpg', data: 'static/img/assortment/akkord/03.png', color: 'мускат', serial: 'классик', collection: 'румба', type: 'однослойная'}}, {item:{pic: 'static/img/assortment/akkord/04.jpg', data: 'static/img/assortment/akkord/04.png', color: 'дуб', serial: 'ультра', collection: 'фокстрот', type: 'однослойная'}}, {item:{pic: 'static/img/assortment/akkord/05.jpg', data: 'static/img/assortment/akkord/05.png', color: 'кедр', serial: 'ультра', collection: 'фокстрот', type: 'однослойная'}}, {item:{pic: 'static/img/assortment/akkord/06.jpg', data: 'static/img/assortment/akkord/06.png', color: 'миндаль', serial: 'ультра', collection: 'фокстрот', type: 'однослойная'}}, {item:{pic: 'static/img/assortment/akkord/07.jpg', data: 'static/img/assortment/akkord/07.png', color: 'рябина', serial: 'ультра', collection: 'фокстрот', type: 'однослойная'}}, {item:{pic: 'static/img/assortment/akkord/08.jpg', data: 'static/img/assortment/akkord/08.png', color: 'Сандал', serial: 'ультра', collection: 'фокстрот', type: 'однослойная'}}, {item:{pic: 'static/img/assortment/akkord/09.jpg', data: 'static/img/assortment/akkord/09.png', color: 'терн', serial: 'ультра', collection: 'фокстрот', type: 'однослойная'}}, {item:{pic: 'static/img/assortment/akkord/10.jpg', data: 'static/img/assortment/akkord/10.png', color: 'тополь', serial: 'ультра', collection: 'фокстрот', type: 'однослойная'}}, {item:{pic: 'static/img/assortment/akkord/11.jpg', data: 'static/img/assortment/akkord/11.png', color: 'Эвкалипт', serial: 'ультра', collection: 'фокстрот', type: 'однослойная'}}, {item:{pic: 'static/img/assortment/akkord/12.jpg', data: 'static/img/assortment/akkord/12.png', color: 'коричневый', serial: 'финская', collection: 'акорд', type: 'однослойная'}}, {item:{pic: 'static/img/assortment/akkord/13.jpg', data: 'static/img/assortment/akkord/13.png', color: 'красный', serial: 'финская', collection: 'акорд', type: 'однослойная'}}, {item:{pic: 'static/img/assortment/akkord/14.jpg', data: 'static/img/assortment/akkord/14.png', color: 'серый', serial: 'финская', collection: 'акорд', type: 'однослойная'}} ];
+
+.assortment#slider0(data-up="0")
+	each block in header
+		.assortment__slide
+			.assortment__header
+				ul.assortment__list
+					li.assortment__item
+						p Цвет
+						strong #{block.item.color}
+					li.assortment__item
+						p Серия
+						strong #{block.item.serial}
+					li.assortment__item
+						p Коллекция
+						strong #{block.item.collection}
+					li.assortment__item
+						p тип
+						strong #{block.item.type}
+			.assortment__pic(data-thumb=block.item.data)
+				img(src=block.item.pic, alt='изображение')
+				a(href='#').assortment__btn
+					span купить
+					i

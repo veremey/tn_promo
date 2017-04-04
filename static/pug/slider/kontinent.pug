@@ -1,0 +1,24 @@
+-var header = [{item:{pic: 'static/img/assortment/kontinent/01.jpg', data: 'static/img/assortment/kontinent/01.png', color: 'азия', serial: 'Континент', collection: 'Континент', type: 'Многослойная'}}, {item:{pic: 'static/img/assortment/kontinent/02.jpg', data: 'static/img/assortment/kontinent/02.png', color: 'америка', serial: 'Континент', collection: 'Континент', type: 'Многослойная'}}, {item:{pic: 'static/img/assortment/kontinent/03.jpg', data: 'static/img/assortment/kontinent/03.png', color: 'африка', serial: 'Континент', collection: 'Континент', type: 'Многослойная'}}, {item:{pic: 'static/img/assortment/kontinent/04.jpg', data: 'static/img/assortment/kontinent/04.png', color: 'европа', serial: 'Континент', collection: 'Континент', type: 'Многослойная'}} ];
+
+.assortment#slider7(data-up="-3885")
+	each block in header
+		.assortment__slide
+			.assortment__header
+				ul.assortment__list
+					li.assortment__item
+						p Цвет
+						strong #{block.item.color}
+					li.assortment__item
+						p Серия
+						strong #{block.item.serial}
+					li.assortment__item
+						p Коллекция
+						strong #{block.item.collection}
+					li.assortment__item
+						p тип
+						strong #{block.item.type}
+			.assortment__pic(data-thumb=block.item.data)
+				img(src=block.item.pic, alt='изображение')
+				a(href='#').assortment__btn
+					span купить
+					i

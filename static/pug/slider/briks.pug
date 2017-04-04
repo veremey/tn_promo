@@ -1,0 +1,24 @@
+-var header = [ {item:{pic: 'static/img/assortment/briks/01.jpg', data: 'static/img/assortment/briks/01.png', color: 'дюна', serial: 'классик', collection: 'Модерн', type: 'однослойная'}}, {item:{pic: 'static/img/assortment/briks/02.jpg', data: 'static/img/assortment/briks/02.png', color: 'ледник', serial: 'классик', collection: 'Модерн', type: 'однослойная'}}, {item:{pic: 'static/img/assortment/briks/03.jpg', data: 'static/img/assortment/briks/03.png', color: 'мрамор', serial: 'классик', collection: 'Модерн', type: 'однослойная'}}, {item:{pic: 'static/img/assortment/briks/04.jpg', data: 'static/img/assortment/briks/04.png', color: 'плато', serial: 'классик', collection: 'Модерн', type: 'однослойная'}} ];
+
+.assortment#slider2(data-up="-1110")
+	each block in header
+		.assortment__slide
+			.assortment__header
+				ul.assortment__list
+					li.assortment__item
+						p Цвет
+						strong #{block.item.color}
+					li.assortment__item
+						p Серия
+						strong #{block.item.serial}
+					li.assortment__item
+						p Коллекция
+						strong #{block.item.collection}
+					li.assortment__item
+						p тип
+						strong #{block.item.type}
+			.assortment__pic(data-thumb=block.item.data)
+				img(src=block.item.pic, alt='изображение')
+				a(href='#').assortment__btn
+					span купить
+					i

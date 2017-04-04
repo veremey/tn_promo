@@ -1,0 +1,58 @@
+.renov
+	padding-top: 76px
+	&__pic
+		position: relative
+		// height: 480px
+		// overflow: hidden
+		margin: 60px 0 70px
+		text-align: center
+		img
+			// +vcenter
+			display: inline-block
+			vertical-align: top
+			height: auto
+			max-width: 100%
+	p
+		font-size: 18px
+		line-height: 30px
+		margin-bottom: 30px
+		color: #000
+		+rr
+
+
+.promo
+	padding: 65px 0px
+	margin: 70px 0 60px
+	border: 20px solid $red
+	border-top: none
+	border-bottom: none
+	box-shadow: 0 0 51px 0 rgba(0, 0, 0, .36)
+
+.video
+	margin-bottom: 60px
+
+.turn-back
+	position: relative
+	display: inline-block
+	margin: 30px 0 20px
+	padding-left: 30px
+	font-size: 16px
+	color: #000
+	letter-spacing: .01em
+	line-height: 24px
+	+rl
+	+tr(.4s)
+	&:before
+		content: ''
+		position: absolute
+		top: 50%
+		left: 0
+		+try(-50%)
+		+tr(.4s)
+		+s(icon-turn-back)
+
+	&:hover
+		opacity: .8
+		&:before
+			left: -5px
+

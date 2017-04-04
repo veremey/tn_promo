@@ -1,0 +1,146 @@
+.feedback
+	position: absolute
+	top: 0
+	right: 0
+	width: 372px
+	padding: 25px 30px 40px
+	background-color: #FFF
+	z-index: 200
+	p
+		font-size: 18px
+		color: #000
+		letter-spacing: .01em
+		text-align: center
+		text-transform: uppercase
+		margin-bottom: 30px
+		+rr
+	&__field
+		position: relative
+		height: 51px
+		margin-bottom: 5px
+		border-bottom: 1px solid #e5e5e5
+		&:before,
+		&:after
+			content: ''
+			position: absolute
+			bottom: -1px
+			width: 0
+			height: 1px
+			background-color: $red
+			+tr(.5s)
+		&:before
+			left: 50%
+		&:after
+			right: 50%
+		&:hover
+			&:after,
+			&:before
+				width: 50%
+		&.input--filled,
+		&.input--focus
+			.feedback__label
+				top: 0
+				font-size: 12px
+			input
+				padding-top: 10px
+		&.input--focus
+			&:after,
+			&:before
+				width: 50%
+		&.text-field
+			height: 90px
+			margin-bottom: 15px
+
+		input
+			width: 100%
+			height: 50px
+			border: none
+			outline: none
+			padding: 0 23px
+			font-size: 16px
+
+		textarea
+			width: 100%
+			height: 100%
+			resize: none
+			border: none
+			outline: none
+			padding: 15px 20px
+			font-size: 16px
+	&__label
+		position: absolute
+		top: 15px
+		left: 20px
+		font-size: 16px
+		color: #a1a1a1
+		user-select: none
+		pointer-events: none
+		+tr(.4s)
+
+.btn
+	display: block
+	width: 100%
+	height: 60px
+	background-color: $red
+	font-size: 12px
+	letter-spacing: .2em
+	text-transform: uppercase
+	text-align: center
+	line-height: 56px
+	color: #fff
+	border-radius: 60px
+	border: 2px solid $red
+	outline: none
+	+rr
+	+tr(.4s)
+	&:hover
+		background-color: #FFF
+		color: $red
+	&.btn__feedback
+		background-color: #FFF
+		color: $red
+
+.mail
+	display: none
+	position: absolute
+	top: 100%
+	left: 0
+	right: 0
+	padding: 20px 30px 20px 15px
+	background-color: #FFF
+	box-shadow: 0 0 32px 0 rgba(0, 0, 0, .36)
+	border-bottom: 10px solid #ebebeb
+	z-index: 50
+	&.is_active
+		display: block
+	.icon-close
+		position: absolute
+		top: 10px
+		right: 10px
+		+s(icon-close)
+	&__content
+		display: flex
+		align-items: center
+		justify-content: space-between
+		flex-wrap: wrap
+	&__text
+		flex: 0 1 200px
+	&__title
+		font-size: 24px
+		line-height: 26px
+		margin-bottom: 10px
+		+rr
+	.mail__desc
+		font-size: 16px
+		text-transform: none
+		margin-bottom: 0
+		text-align: left
+		letter-spacing: 0
+		+rr
+
+.has-error
+	position: absolute
+	top: 0px
+	right: 0
+	color: $red
+	font-size: 12px

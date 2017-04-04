@@ -1,0 +1,134 @@
++font('roboto-light', 'roboto-light')
++font('roboto-medium', 'roboto-medium')
++font('roboto-regular', 'roboto-regular')
++font('CenturyGothic', 'CenturyGothic')
++font('DINProCondBold', 'DINProCondBold')
++font('proxima_nova_bold-webfont', 'proxima_nova_bold-webfont')
+
+=pnb
+	font-family: 'proxima_nova_bold-webfont', Arial, sans-serif
+=d
+	font-family: 'DINProCondBold', Arial, sans-serif
+=cg
+	font-family: 'CenturyGothic', Arial, sans-serif
+=rr
+	font-family: 'roboto-regular', Arial, sans-serif
+=rm
+	font-family: 'roboto-medium', Arial, sans-serif
+=rl
+	font-family: 'roboto-light', Arial, sans-serif
+
+
+// colors
+$n: transparent
+$red: #e30613
+$cherry: #870924
+
+
+
+// size
+$site-width: 1260px
+
+html
+	+selection
+		background: rgba(0, 0, 0, .2)
+		color: #fff
+
+body
+	min-width: $site-width
+	font-size: 16px
+	background-color: #fff
+	color: #000
+	+rl
+
+
+// common blocks
+
+.out
+	position: relative
+	background-color: #fff
+	+clr
+.layout
+	width: 1280px
+	position: relative
+	margin: 0 auto
+	+clr
+	&__inner
+		width: 1200px
+		position: relative
+		margin: 0 auto
+		+clr
+	&__inset
+		width: 1040px
+		position: relative
+		margin: 0 auto
+		+clr
+
+.section
+	padding: 67px 0 90px
+	&.mod_zerro
+		padding-top: 0
+.section__title
+	font-size: 50px
+	letter-spacing: .025em
+	color: #000
+	margin: 0 0 35px
+	text-align: center
+	+rr
+	&.mod_noul
+		margin-bottom: 0
+		line-height: 1.1
+
+.article
+	padding-top: 50px
+	&__title
+		font-size: 30px
+		line-height: 60px
+		margin-bottom: 33px
+		letter-spacing: -.025em
+		color: #000
+		text-align: center
+		+rr
+
+.bg-dark
+	background-color: #ebebeb
+
+.clear
+	clear: both
+	display: table
+	height: 0
+
+.shadow
+	opacity: 0
+	+coverdiv
+	z-index: 1
+	pointer-events: none
+	box-shadow: 0 0 0 0px #fff inset, 0 0 20px 300px rgba(0, 0, 0, .6) inset
+	+tr(.8s)
+
+h1, h2, h3, h4, h5, h6
+	margin: 0 0 .8em
+	font-weight: normal
+	line-height: 1.1
+h1
+	font-size: 2em
+h2
+	font-size: 1.8em
+h3
+	font-size: 1.6em
+h4
+	font-size: 1.5em
+h5
+	font-size: 1.4em
+h6
+	font-size: 1.3em
+
+ul,
+ol
+	margin: 0
+b,
+strong
+	font-weight: normal
+
+a
+	text-decoration: none

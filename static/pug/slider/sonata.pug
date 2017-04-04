@@ -1,0 +1,24 @@
+-var header = [{item:{pic: 'static/img/assortment/sonata/01.jpg', data: 'static/img/assortment/sonata/01.png', color: 'агат', serial: 'классик', collection: 'Кадриль', type: 'однослойная'}}, {item:{pic: 'static/img/assortment/sonata/02.jpg', data: 'static/img/assortment/sonata/02.png', color: 'гранат', serial: 'классик', collection: 'Кадриль', type: 'однослойная'}}, {item:{pic: 'static/img/assortment/sonata/03.jpg', data: 'static/img/assortment/sonata/03.png', color: 'Нефрит', serial: 'классик', collection: 'Кадриль', type: 'однослойная'}}, {item:{pic: 'static/img/assortment/sonata/04.jpg', data: 'static/img/assortment/sonata/04.png', color: 'Оникс', serial: 'классик', collection: 'Кадриль', type: 'однослойная'}}, {item:{pic: 'static/img/assortment/sonata/05.jpg', data: 'static/img/assortment/sonata/05.png', color: 'Турмалин', serial: 'классик', collection: 'Кадриль', type: 'однослойная'}}, {item:{pic: 'static/img/assortment/sonata/06.jpg', data: 'static/img/assortment/sonata/06.png', color: 'Яшма', serial: 'классик', collection: 'Кадриль', type: 'однослойная'}}, {item:{pic: 'static/img/assortment/sonata/07.jpg', data: 'static/img/assortment/sonata/07.png', color: 'Малахит', serial: 'Ультра', collection: 'самба', type: 'однослойная'}}, {item:{pic: 'static/img/assortment/sonata/08.jpg', data: 'static/img/assortment/sonata/08.png', color: 'рубин', serial: 'Ультра', collection: 'самба', type: 'однослойная'}}, {item:{pic: 'static/img/assortment/sonata/09.jpg', data: 'static/img/assortment/sonata/09.png', color: 'Янтарь', serial: 'Ультра', collection: 'самба', type: 'однослойная'}}, {item:{pic: 'static/img/assortment/sonata/10.jpg', data: 'static/img/assortment/sonata/10.png', color: 'зеленая', serial: 'Финская', collection: 'соната', type: 'однослойная'}}, {item:{pic: 'static/img/assortment/sonata/11.jpg', data: 'static/img/assortment/sonata/11.png', color: 'Коричневая', serial: 'Финская', collection: 'соната', type: 'однослойная'}}, {item:{pic: 'static/img/assortment/sonata/12.jpg', data: 'static/img/assortment/sonata/12.png', color: 'Крассная', serial: 'Финская', collection: 'соната', type: 'однослойная'}}, {item:{pic: 'static/img/assortment/sonata/13.jpg', data: 'static/img/assortment/sonata/13.png', color: 'Серая', serial: 'Финская', collection: 'соната', type: 'однослойная'}} ];
+
+.assortment#slider1(data-up="-555")
+	each block in header
+		.assortment__slide
+			.assortment__header
+				ul.assortment__list
+					li.assortment__item
+						p Цвет
+						strong #{block.item.color}
+					li.assortment__item
+						p Серия
+						strong #{block.item.serial}
+					li.assortment__item
+						p Коллекция
+						strong #{block.item.collection}
+					li.assortment__item
+						p тип
+						strong #{block.item.type}
+			.assortment__pic(data-thumb=block.item.data)
+				img(src=block.item.pic, alt='изображение')
+				a(href='#').assortment__btn
+					span купить
+					i

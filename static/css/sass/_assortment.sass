@@ -1,0 +1,164 @@
+.cutting
+	width: 420px
+	height: 555px
+	float: left
+	&__header
+		height: 75px
+		text-align: center
+		background-color: #383838
+	&__title
+		font-size: 20px
+		letter-spacing: .025em
+		color: #fff
+		line-height: 75px
+	&__list
+		font-size: 0
+	&__item
+		display: inline-block
+		vertical-align: top
+		height: 120px
+		width: 50%
+		background-color: #606060
+		padding: 19px 0 15px
+		text-align: center
+		cursor: pointer
+		+tr(.4s)
+		&:hover
+			opacity: .8
+		&.is_active
+			background-color: #FFF
+			@each $s in icon-cut-01,icon-cut-02,icon-cut-03,icon-cut-04,icon-cut-05,icon-cut-06,icon-cut-07,icon-cut-08
+				.#{$s}
+					display: inline-block
+					+s(#{$s}-hover)
+			.cutting
+				&__desc
+					color: #000
+	&__img
+		display: inline-block
+		height: 49px
+	&__desc
+		font-size: 12px
+		letter-spacing: .05em
+		color: #fff
+		margin: 20px 0 0
+		text-transform: uppercase
+		+rr
+
+
+.assortment
+	width: 780px
+	height: 555px
+	float: right
+	&__header
+		height: 75px
+		background-color: #383838
+		overflow: hidden
+	&__list
+		font-size: 0
+	&__item
+		display: inline-block
+		padding: 15px 42px
+		height: 75px
+		p
+			margin: 0
+			font-size: 13px
+			letter-spacing: .025em
+			color: #fff
+			+rl
+		strong
+			font-size: 16px
+			text-transform: uppercase
+			letter-spacing: .025em
+			color: #fff
+			+rr
+			font-weight: 800
+	&__pic
+		position: relative
+		height: 480px
+		overflow: hidden
+		img
+			+vcenter
+			min-height: 100%
+			min-width: 100%
+	&__btn
+		position: absolute
+		bottom: 40px
+		left: 190px
+		width: 138px
+		height: 50px
+		border-radius: 50px
+		background-color: $red
+		box-shadow: 0 0 27px 8px rgba(0, 0, 0, .56)
+		&:hover
+			span
+				left: 42%
+			i
+				opacity: 1
+				right: 30px
+
+		span
+			+vcenter
+			font-size: 12px
+			text-transform: uppercase
+			letter-spacing: .2em
+			color: #fff
+			+rr
+			+tr(.4s)
+		i
+			opacity: 0
+			position: absolute
+			top: 50%
+			right: 40px
+			display: inline-block
+			+s(icon-bird-right)
+			+try(-50%)
+			+tr(.4s)
+
+
+.assort
+	position: relative
+	width: 780px
+	height: 555px
+	float: right
+	overflow: hidden
+	&__wrap
+		+tr(.4s)
+		+clr
+
+.calculate
+	padding-top: 65px
+	text-align: center
+
+	&__btn
+		position: relative
+		display: inline-block
+		padding: 0 30px 0 60px
+		height: 70px
+		background-color: $red
+		border-radius: 70px
+		+tr(.4s)
+		margin: 0 15px
+		&:hover
+			background-color: $cherry
+		span
+			line-height: 70px
+			text-transform: uppercase
+			display: inline-block
+			padding-left: 40px
+			font-size: 15px
+			color: #fff
+			letter-spacing: .025em
+			+rr
+		.icon-calc
+			position: absolute
+			top: 50%
+			+try(-50%)
+			left: 40px
+			+s(iocn-calc)
+		.icon-house
+			position: absolute
+			top: 50%
+			+try(-50%)
+			left: 40px
+			+s(icon-house)

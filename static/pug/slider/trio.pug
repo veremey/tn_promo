@@ -1,0 +1,24 @@
+-var header = [{item:{pic: 'static/img/assortment/trio/01.jpg', data: 'static/img/assortment/trio/01.png', color: 'антик', serial: 'классик', collection: 'Фламенко', type: 'однослойная'}},{item:{pic: 'static/img/assortment/trio/02.jpg', data: 'static/img/assortment/trio/02.png', color: 'арагон', serial: 'классик', collection: 'Фламенко', type: 'однослойная'}},{item:{pic: 'static/img/assortment/trio/03.jpg', data: 'static/img/assortment/trio/03.png', color: 'валенсия', serial: 'классик', collection: 'Фламенко', type: 'однослойная'}},{item:{pic: 'static/img/assortment/trio/04.jpg', data: 'static/img/assortment/trio/04.png', color: 'гранада', serial: 'классик', collection: 'Фламенко', type: 'однослойная'}},{item:{pic: 'static/img/assortment/trio/05.jpg', data: 'static/img/assortment/trio/05.png', color: 'коричневый', serial: 'классик', collection: 'Фламенко', type: 'однослойная'}},{item:{pic: 'static/img/assortment/trio/06.jpg', data: 'static/img/assortment/trio/06.png', color: 'толедо', serial: 'классик', collection: 'Фламенко', type: 'однослойная'}} ];
+
+.assortment#slider4(data-up="-2220")
+	each block in header
+		.assortment__slide
+			.assortment__header
+				ul.assortment__list
+					li.assortment__item
+						p Цвет
+						strong #{block.item.color}
+					li.assortment__item
+						p Серия
+						strong #{block.item.serial}
+					li.assortment__item
+						p Коллекция
+						strong #{block.item.collection}
+					li.assortment__item
+						p тип
+						strong #{block.item.type}
+			.assortment__pic(data-thumb=block.item.data)
+				img(src=block.item.pic, alt='изображение')
+				a(href='#').assortment__btn
+					span купить
+					i

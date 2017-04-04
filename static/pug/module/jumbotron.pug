@@ -1,0 +1,48 @@
+.jumbotron
+	.layout__inner
+		form(action="/", method="post", name='comment', autocomplete='on').feedback.js-validate
+			p обратная связь
+			fieldset.feedback__field
+				input(type='text', name='name')
+				label(for='name').feedback__label Имя
+			fieldset.feedback__field
+				input(type='text', name='tel').feedback__tel
+				label(for='tel').feedback__label Телефон
+			fieldset.feedback__field
+				input(type='text', name='email')
+				label(for='email').feedback__label Эл. почта
+			fieldset.feedback__field.text-field
+				textarea(name="commit", cols="", rows="")
+				label(for='commit').feedback__label Комментарий
+			a(href="#").btn.btn__feedback.js-mail отправить
+			.mail.js-feedback-mail
+				a(href="#", data-close="js-feedback-mail").icon-close.js-close
+				.mail__content
+					img(src="static/img/mail-form.png", alt="")
+					.mail__text
+						h5.mail__title Благодарим Вас!
+						p.mail__desc Ваше сообщение успешно отправлено.
+
+
+
+	.carusel
+		.carusel__item
+			.carusel__pic
+				img(src="static/img/banners/banner-1.jpg", alt="").carusel__img
+			a(href='#').carusel__btn Узнать больше
+		.carusel__item
+			.carusel__pic
+				img(src="static/img/banners/banner-2.jpg", alt="").carusel__img
+			a(href='#').carusel__btn Узнать больше
+		.carusel__item
+			.carusel__pic
+				img(src="static/img/banners/banner-3.jpg", alt="").carusel__img
+			a(href='#').carusel__btn Узнать больше
+		.carusel__item
+			.carusel__pic
+				img(src="static/img/banners/banner-4.jpg", alt="").carusel__img
+			a(href='#').carusel__btn Узнать больше
+		.carusel__item
+			.carusel__pic
+				img(src="static/img/banners/banner-5.jpg", alt="").carusel__img
+			a(href='#').carusel__btn Узнать больше

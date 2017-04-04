@@ -1,0 +1,24 @@
+-var header = [{item:{pic: 'static/img/assortment/drakon_zub/01.jpg', data: 'static/img/assortment/drakon_zub/01.png', color: 'аликанте', serial: 'Джаз', collection: 'Джаз', type: 'Двухслойная'}}, {item:{pic: 'static/img/assortment/drakon_zub/02.jpg', data: 'static/img/assortment/drakon_zub/02.png', color: 'барселона', serial: 'Джаз', collection: 'Джаз', type: 'Двухслойная'}}, {item:{pic: 'static/img/assortment/drakon_zub/03.jpg', data: 'static/img/assortment/drakon_zub/03.png', color: 'индиго', serial: 'Джаз', collection: 'Джаз', type: 'Двухслойная'}}, {item:{pic: 'static/img/assortment/drakon_zub/04.jpg', data: 'static/img/assortment/drakon_zub/04.png', color: 'кастилия', serial: 'Джаз', collection: 'Джаз', type: 'Двухслойная'}}, {item:{pic: 'static/img/assortment/drakon_zub/05.jpg', data: 'static/img/assortment/drakon_zub/05.png', color: 'коррида', serial: 'Джаз', collection: 'Джаз', type: 'Двухслойная'}}, {item:{pic: 'static/img/assortment/drakon_zub/06.jpg', data: 'static/img/assortment/drakon_zub/06.png', color: 'севилья', serial: 'Джаз', collection: 'Джаз', type: 'Двухслойная'}}, {item:{pic: 'static/img/assortment/drakon_zub/07.jpg', data: 'static/img/assortment/drakon_zub/07.png', color: 'сицилия', serial: 'Джаз', collection: 'Джаз', type: 'Двухслойная'}}, {item:{pic: 'static/img/assortment/drakon_zub/08.jpg', data: 'static/img/assortment/drakon_zub/08.png', color: 'терра', serial: 'Джаз', collection: 'Джаз', type: 'Двухслойная'}}, {item:{pic: 'static/img/assortment/drakon_zub/09.jpg', data: 'static/img/assortment/drakon_zub/09.png', color: 'тоскана', serial: 'Джаз', collection: 'Джаз', type: 'Двухслойная'}}, {item:{pic: 'static/img/assortment/drakon_zub/10.jpg', data: 'static/img/assortment/drakon_zub/10.png', color: 'алабама', serial: 'Кантри', collection: 'Кантри', type: 'Двухслойная'}}, {item:{pic: 'static/img/assortment/drakon_zub/11.jpg', data: 'static/img/assortment/drakon_zub/11.png', color: 'аризона', serial: 'Кантри', collection: 'Кантри', type: 'Двухслойная'}}, {item:{pic: 'static/img/assortment/drakon_zub/12.jpg', data: 'static/img/assortment/drakon_zub/12.png', color: 'атланта', serial: 'Кантри', collection: 'Кантри', type: 'Двухслойная'}}, {item:{pic: 'static/img/assortment/drakon_zub/13.jpg', data: 'static/img/assortment/drakon_zub/13.png', color: 'индиана', serial: 'Кантри', collection: 'Кантри', type: 'Двухслойная'}}, {item:{pic: 'static/img/assortment/drakon_zub/14.jpg', data: 'static/img/assortment/drakon_zub/14.png', color: 'мичиган', serial: 'Кантри', collection: 'Кантри', type: 'Двухслойная'}} , {item:{pic: 'static/img/assortment/drakon_zub/15.jpg', data: 'static/img/assortment/drakon_zub/15.png', color: 'огайо', serial: 'Кантри', collection: 'Кантри', type: 'Двухслойная'}} , {item:{pic: 'static/img/assortment/drakon_zub/16.jpg', data: 'static/img/assortment/drakon_zub/16.png', color: 'онтарио', serial: 'Кантри', collection: 'Кантри', type: 'Двухслойная'}} , {item:{pic: 'static/img/assortment/drakon_zub/17.jpg', data: 'static/img/assortment/drakon_zub/17.png', color: 'техас', serial: 'Кантри', collection: 'Кантри', type: 'Двухслойная'}} , {item:{pic: 'static/img/assortment/drakon_zub/18.jpg', data: 'static/img/assortment/drakon_zub/18.png', color: 'юта', serial: 'Кантри', collection: 'Кантри', type: 'Двухслойная'}} , {item:{pic: 'static/img/assortment/drakon_zub/19.jpg', data: 'static/img/assortment/drakon_zub/19.png', color: 'бронзовый', serial: 'ранчо', collection: 'ранчо', type: 'Двухслойная'}} , {item:{pic: 'static/img/assortment/drakon_zub/20.jpg', data: 'static/img/assortment/drakon_zub/20.png', color: 'коричневый', serial: 'ранчо', collection: 'ранчо', type: 'Двухслойная'}} , {item:{pic: 'static/img/assortment/drakon_zub/21.jpg', data: 'static/img/assortment/drakon_zub/21.png', color: 'красный', serial: 'ранчо', collection: 'ранчо', type: 'Двухслойная'}} , {item:{pic: 'static/img/assortment/drakon_zub/22.jpg', data: 'static/img/assortment/drakon_zub/22.png', color: 'серый', serial: 'ранчо', collection: 'ранчо', type: 'Двухслойная'}} ];
+
+.assortment#slider6(data-up="-3330")
+	each block in header
+		.assortment__slide
+			.assortment__header
+				ul.assortment__list
+					li.assortment__item
+						p Цвет
+						strong #{block.item.color}
+					li.assortment__item
+						p Серия
+						strong #{block.item.serial}
+					li.assortment__item
+						p Коллекция
+						strong #{block.item.collection}
+					li.assortment__item
+						p тип
+						strong #{block.item.type}
+			.assortment__pic(data-thumb=block.item.data)
+				img(src=block.item.pic, alt='изображение')
+				a(href='#').assortment__btn
+					span купить
+					i

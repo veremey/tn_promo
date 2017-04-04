@@ -1,0 +1,30 @@
+extends _layout
+block content
+	.out
+		include layout/header.pug
+		.maincontent
+			section#s_first
+				include module/jumbotron.pug
+			section#s_second
+				include module/material.pug
+			section#s_third
+				include module/cupon.pug
+			section#s_fourth
+				include module/landlord.pug
+			section#s_fifth
+				include module/pack.pug
+			section#s_sixth
+				include module/assortment.pug
+			section#s_seventh
+				include module/gallery.pug
+			section#s_eighth
+				include module/map.pug
+			section#s_nineth
+				include layout/footer.pug
+		.nav_scroll
+			a(href="#").nav_scroll__btn.nav_scroll__btn_up
+				i.icon-up
+				span Вверх
+			a(href="#").nav_scroll__btn.nav_scroll__btn_down
+				i.icon-down
+				span Вниз

@@ -1,0 +1,24 @@
+-var header = [{item:{pic: 'static/img/assortment/vestern/01.jpg', data: 'static/img/assortment/vestern/01.png', color: 'каньон', serial: 'Вестерн', collection: 'Вестерн', type: 'Двухслойная'}},{item:{pic: 'static/img/assortment/vestern/02.jpg', data: 'static/img/assortment/vestern/02.png', color: 'Клондайк', serial: 'Вестерн', collection: 'Вестерн', type: 'Двухслойная'}},{item:{pic: 'static/img/assortment/vestern/03.jpg', data: 'static/img/assortment/vestern/03.png', color: 'ниагара', serial: 'Вестерн', collection: 'Вестерн', type: 'Двухслойная'}},{item:{pic: 'static/img/assortment/vestern/04.jpg', data: 'static/img/assortment/vestern/04.png', color: 'прерия', serial: 'Вестерн', collection: 'Вестерн', type: 'Двухслойная'}} ];
+
+.assortment#slider5(data-up="-2775")
+	each block in header
+		.assortment__slide
+			.assortment__header
+				ul.assortment__list
+					li.assortment__item
+						p Цвет
+						strong #{block.item.color}
+					li.assortment__item
+						p Серия
+						strong #{block.item.serial}
+					li.assortment__item
+						p Коллекция
+						strong #{block.item.collection}
+					li.assortment__item
+						p тип
+						strong #{block.item.type}
+			.assortment__pic(data-thumb=block.item.data)
+				img(src=block.item.pic, alt='изображение')
+				a(href='#').assortment__btn
+					span купить
+					i

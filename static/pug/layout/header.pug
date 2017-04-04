@@ -1,0 +1,33 @@
+header.header
+	.layout__inner
+		.definition
+			.head
+				a(href="/").logo
+					img(src='static/img/logo.svg', alt='logo')
+				.select.js-select
+					.select__text.js-select-text
+						img(src='static/img/flag-ua.jpg', alt='ua')
+						span Укр
+					input(type="hidden", value="").js-select-input
+					ul.select__list.js-select-list
+						li(data-id="0")
+							img(src='static/img/flag-ru.jpg', alt='ru')
+							span рус
+						li(data-id="1")
+							img(src='static/img/flag-en.png', alt='en')
+							span en
+			nav.navigate
+				ul.menu
+					li.menu__list
+						a(href="#").menu__link Статьи
+					li.menu__list
+						a(href="#").menu__link.red_item С к и д к и
+							span  %
+					li.menu__list.is_active
+						a(href="#").menu__link Мнение домовладельцев
+					li.menu__list
+						a(href="#").menu__link Преимущества
+					li.menu__list
+						a(href="#").menu__link Ассортимент
+					li.menu__list
+						a(href="#").menu__link Контакты

@@ -1,0 +1,24 @@
+-var header = [{item:{pic: 'static/img/assortment/bobroviy_hvost/01.jpg', data: 'static/img/assortment/bobroviy_hvost/01.png', color: 'кленовый', serial: 'классик', collection: 'Танго', type: 'однослойная'}},{item:{pic: 'static/img/assortment/bobroviy_hvost/02.jpg', data: 'static/img/assortment/bobroviy_hvost/02.png', color: 'осенний', serial: 'классик', collection: 'Танго', type: 'однослойная'}},{item:{pic: 'static/img/assortment/bobroviy_hvost/03.jpg', data: 'static/img/assortment/bobroviy_hvost/03.png', color: 'панговый', serial: 'классик', collection: 'Танго', type: 'однослойная'}},{item:{pic: 'static/img/assortment/bobroviy_hvost/04.jpg', data: 'static/img/assortment/bobroviy_hvost/04.png', color: 'хвойный', serial: 'классик', collection: 'Танго', type: 'однослойная'}} ];
+
+.assortment#slider3(data-up="-1665")
+	each block in header
+		.assortment__slide
+			.assortment__header
+				ul.assortment__list
+					li.assortment__item
+						p Цвет
+						strong #{block.item.color}
+					li.assortment__item
+						p Серия
+						strong #{block.item.serial}
+					li.assortment__item
+						p Коллекция
+						strong #{block.item.collection}
+					li.assortment__item
+						p тип
+						strong #{block.item.type}
+			.assortment__pic(data-thumb=block.item.data)
+				img(src=block.item.pic, alt='изображение')
+				a(href='#').assortment__btn
+					span купить
+					i

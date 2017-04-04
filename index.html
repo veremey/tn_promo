@@ -1,0 +1,1938 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>TN_promo</title>
+    <meta name="viewport" content="width=1280, minimal-ui" id="testViewport">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta content="telephone=no" name="format-detection">
+    <link rel="icon" href="static/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" media="all" href="static/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" media="all" href="static/css/jquery.fullPage.css">
+    <link rel="stylesheet" media="all" href="static/css/style.css">
+    <script src="static/js/lib/jquery.js"></script>
+    <script src="static/js/lib/jquery.validate.min.js"></script>
+    <script src="static/js/lib/classie.js"></script>
+    <script src="static/js/lib/slick.min.js"></script>
+    <script src="static/js/lib/jquery.fancybox.min.js"></script>
+    <script src="static/js/lib/jquery.mCustomScrollbar.js"></script>
+    <script src="static/js/lib/jquery.formatter.min.js"></script>
+    <script src="static/js/lib/jquery.fullPage.min.js"></script>
+    <script src="static/js/scroll.js"></script>
+    <script src="static/js/init-select.js"></script>
+    <script src="static/js/init-validate.js"></script>
+    <script src="static/js/init-scroll.js"></script>
+    <script src="static/js/init-fullPage"></script>
+    <script src="static/js/common.js"></script>
+  </head>
+  <body>
+    <!--BEGIN out-->
+    <div class="out">
+      <header class="header">
+        <div class="layout__inner">
+          <div class="definition">
+            <div class="head"><a class="logo" href="/"><img src="static/img/logo.svg" alt="logo"></a>
+              <div class="select js-select">
+                <div class="select__text js-select-text"><img src="static/img/flag-ua.jpg" alt="ua"><span>Укр</span></div>
+                <input class="js-select-input" type="hidden" value="">
+                <ul class="select__list js-select-list">
+                  <li data-id="0"><img src="static/img/flag-ru.jpg" alt="ru"><span>рус</span></li>
+                  <li data-id="1"><img src="static/img/flag-en.png" alt="en"><span>en</span></li>
+                </ul>
+              </div>
+            </div>
+            <nav class="navigate">
+              <ul class="menu">
+                <li class="menu__list"><a class="menu__link" href="#">Статьи</a></li>
+                <li class="menu__list"><a class="menu__link red_item" href="#">С к и д к и<span> %</span></a></li>
+                <li class="menu__list is_active"><a class="menu__link" href="#">Мнение домовладельцев</a></li>
+                <li class="menu__list"><a class="menu__link" href="#">Преимущества</a></li>
+                <li class="menu__list"><a class="menu__link" href="#">Ассортимент</a></li>
+                <li class="menu__list"><a class="menu__link" href="#">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div class="maincontent">
+        <section id="s_first">
+          <div class="jumbotron">
+            <div class="layout__inner">
+              <form class="feedback js-validate" action="/" method="post" name="comment" autocomplete="on">
+                <p>обратная связь</p>
+                <fieldset class="feedback__field">
+                  <input type="text" name="name">
+                  <label class="feedback__label" for="name">Имя</label>
+                </fieldset>
+                <fieldset class="feedback__field">
+                  <input class="feedback__tel" type="text" name="tel">
+                  <label class="feedback__label" for="tel">Телефон</label>
+                </fieldset>
+                <fieldset class="feedback__field">
+                  <input type="text" name="email">
+                  <label class="feedback__label" for="email">Эл. почта</label>
+                </fieldset>
+                <fieldset class="feedback__field text-field">
+                  <textarea name="commit" cols="" rows=""></textarea>
+                  <label class="feedback__label" for="commit">Комментарий</label>
+                </fieldset><a class="btn btn__feedback js-mail" href="#">отправить</a>
+                <div class="mail js-feedback-mail"><a class="icon-close js-close" href="#" data-close="js-feedback-mail"></a>
+                  <div class="mail__content"><img src="static/img/mail-form.png" alt="">
+                    <div class="mail__text">
+                      <h5 class="mail__title">Благодарим Вас!</h5>
+                      <p class="mail__desc">Ваше сообщение успешно отправлено.</p>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="carusel">
+              <div class="carusel__item">
+                <div class="carusel__pic"><img class="carusel__img" src="static/img/banners/banner-1.jpg" alt=""></div><a class="carusel__btn" href="#">Узнать больше</a>
+              </div>
+              <div class="carusel__item">
+                <div class="carusel__pic"><img class="carusel__img" src="static/img/banners/banner-2.jpg" alt=""></div><a class="carusel__btn" href="#">Узнать больше</a>
+              </div>
+              <div class="carusel__item">
+                <div class="carusel__pic"><img class="carusel__img" src="static/img/banners/banner-3.jpg" alt=""></div><a class="carusel__btn" href="#">Узнать больше</a>
+              </div>
+              <div class="carusel__item">
+                <div class="carusel__pic"><img class="carusel__img" src="static/img/banners/banner-4.jpg" alt=""></div><a class="carusel__btn" href="#">Узнать больше</a>
+              </div>
+              <div class="carusel__item">
+                <div class="carusel__pic"><img class="carusel__img" src="static/img/banners/banner-5.jpg" alt=""></div><a class="carusel__btn" href="#">Узнать больше</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="s_second">
+          <section class="section">
+            <div class="layout__inner">
+              <h4 class="section__title">Полезные материалы</h4>
+              <div class="partical">
+                <div class="partical__item">
+                  <div class="partical__pic"><img class="partical__img" src="static/img/material/01.jpg" alt="изображение"></div>
+                  <div class="partical__content">
+                    <div class="partical__head">
+                      <h5 class="partical__subtitle">Статья</h5>
+                      <h3 class="partical__title">Реновация кровли <br> от А до Я</h3>
+                    </div><a class="partical__btn" href="/renov.html">смотреть</a>
+                  </div>
+                </div>
+                <div class="partical__item">
+                  <div class="partical__pic"><img class="partical__img" src="static/img/material/02.jpg" alt="изображение"></div>
+                  <div class="partical__content">
+                    <div class="partical__head">
+                      <h5 class="partical__subtitle">Статья</h5>
+                      <h3 class="partical__title">Сравнение кровельных <br> материалов</h3>
+                    </div><a class="partical__btn" href="/renov.html">смотреть</a>
+                  </div>
+                </div>
+                <div class="partical__item">
+                  <div class="partical__pic"><img class="partical__img" src="static/img/material/03.jpg" alt="изображение"></div>
+                  <div class="partical__content">
+                    <div class="partical__head">
+                      <h5 class="partical__subtitle">Статья</h5>
+                      <h3 class="partical__title">Безопасный и комфортный дом. <br> Кровельные вопросы</h3>
+                    </div><a class="partical__btn" href="/renov.html">смотреть</a>
+                  </div>
+                </div>
+                <div class="partical__item">
+                  <div class="partical__pic"><img class="partical__img" src="static/img/material/04.jpg" alt="изображение"></div>
+                  <div class="partical__content">
+                    <div class="partical__head">
+                      <h5 class="partical__subtitle">Статья</h5>
+                      <h3 class="partical__title">Как выбрать кровлю для <br> украинского дома</h3>
+                    </div><a class="partical__btn" href="/renov.html">смотреть</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section id="s_third">
+          <div class="cupon"><img class="cupon__bg" src="static/img/cupon.png" alt=""><img class="cupon__logo" src="static/img/cupon-logo.png" alt="">
+            <div class="layout__inner">
+              <div class="cupon__context">
+                <div class="cupon__get">
+                  <h4 class="cupon__title">Получить купон <br> на скидку</h4>
+                  <p><strong>5% скидки</strong> на любые товары ТЕХНОНИКОЛЬ SHINGLAS</p>
+                  <p><strong>10% скидки</strong> при покупке от 100 м² многослойной черепицы</p><a href="#s_eighth">Где я могу использовать купон?</a>
+                </div>
+                <div class="cupon__take">
+                  <div class="cupon__header">
+                    <h4 class="cupon__discount">скидка</h4><a class="cupon__link" href="/renov.html">Условия акции</a>
+                  </div>
+                  <form class="discount js-validate" method="post" action="/" autocomplete="on">
+                    <fieldset class="discount__fieldset">
+                      <input class="discount__email" type="text" name="email" placeholder="Ваша эл. почта">
+                      <button class="discount__btn js-cupon-latter" type="submit">Получить купон</button>
+                    </fieldset>
+                    <div class="mail js-cupon-mail"><a class="icon-close js-close" href="#" data-close="js-cupon-mail"></a>
+                      <div class="mail__content"><img src="static/img/mail-cupon.png" alt="">
+                        <div class="mail__text">
+                          <h5 class="mail__title">Проверьте свою почту</h5>
+                          <p class="mail__desc">Вам пришло письмо с купоном <br> на скидку от ТЕХНОНИКОЛЬ</p>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="s_fourth">
+          <section class="section">
+            <div class="layout__inner">
+              <h4 class="section__title">Мнение домовладельцев</h4>
+              <div class="partical">
+                <div class="partical__item partical_shadow">
+                  <div class="partical__pic"><img class="partical__img" src="static/img/landlord/01.jpg" alt="изображение"></div>
+                  <div class="partical__content">
+                    <div class="partical__head">
+                      <h3 class="partical__title">Семья Тимченко</h3>
+                      <h5 class="partical__subtitle">Московская область</h5>
+                    </div><a class="partical__btn" href="/renov.html">смотреть</a>
+                  </div>
+                </div>
+                <div class="partical__item partical_shadow">
+                  <div class="partical__pic"><img class="partical__img" src="static/img/landlord/02.jpg" alt="изображение"></div>
+                  <div class="partical__content">
+                    <div class="partical__head">
+                      <h3 class="partical__title">Иван Дмитриевич</h3>
+                      <h5 class="partical__subtitle">Пенсионер-дачник. Калуга</h5>
+                    </div><a class="partical__btn" href="/renov.html">смотреть</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section id="s_fifth">
+          <div class="pack" id="pack">
+            <div class="pack__pic"><img class="pack__pic_big" src="static/img/skew.png" alt="изображение"><img class="pack__pic_min" src="static/img/pack.png" alt="изображение"></div>
+            <div class="edge">
+              <ul class="edge__list">
+                <li class="edge__item"><img src="static/img/edge-01.png" alt="изображение"><strong>многослойность</strong></li>
+                <li class="edge__item"><img src="static/img/edge-02.png" alt="изображение"><strong>трёхмерный <br> цвет и фактура</strong></li>
+                <li class="edge__item"><img src="static/img/edge-03.png" alt="изображение"><strong>долговечность</strong></li>
+                <li class="edge__item"><img src="static/img/edge-04.png" alt="изображение"><strong>на основе <br> базальта</strong></li>
+              </ul>
+              <p class="edge__desk">Гибкая черепица – это битумный материал, представляющий собой прямоугольные <br> модули (гонты) небольших размеров, с фигурными вырезами по одному краю, которые на <br> кровле укладываются рядами внахлест. Он идеален в качестве покрытия на скатных <br> крышах, как простой, так и сложной конфигурации, вплоть до куполов.</p>
+            </div>
+          </div>
+        </section>
+        <section id="s_sixth">
+          <section class="section bg-dark">
+            <h4 class="section__title">Ассортимент</h4>
+            <div class="layout__inner">
+              <div class="clear">
+                <div class="cutting">
+                  <div class="cutting__header">
+                    <p class="cutting__title">Формы нарезки черепицы</p>
+                  </div>
+                  <ul class="cutting__list">
+                    <li class="cutting__item is_active" data-id="slider0"><span class="cutting__img">
+                        <<i class="cutting__pic icon-cut-01"></i>></<i class="cutting__pic icon-cut-01"></i>></span>
+                      <p class="cutting__desc">Аккорд</p>
+                    </li>
+                    <li class="cutting__item" data-id="slider1"><span class="cutting__img">
+                        <<i class="cutting__pic icon-cut-02"></i>></<i class="cutting__pic icon-cut-02"></i>></span>
+                      <p class="cutting__desc">соната</p>
+                    </li>
+                    <li class="cutting__item" data-id="slider2"><span class="cutting__img">
+                        <<i class="cutting__pic icon-cut-03"></i>></<i class="cutting__pic icon-cut-03"></i>></span>
+                      <p class="cutting__desc">брикс</p>
+                    </li>
+                    <li class="cutting__item" data-id="slider3"><span class="cutting__img">
+                        <<i class="cutting__pic icon-cut-04"></i>></<i class="cutting__pic icon-cut-04"></i>></span>
+                      <p class="cutting__desc">бобровый хвост</p>
+                    </li>
+                    <li class="cutting__item" data-id="slider4"><span class="cutting__img">
+                        <<i class="cutting__pic icon-cut-05"></i>></<i class="cutting__pic icon-cut-05"></i>></span>
+                      <p class="cutting__desc">трио</p>
+                    </li>
+                    <li class="cutting__item" data-id="slider5"><span class="cutting__img">
+                        <<i class="cutting__pic icon-cut-06"></i>></<i class="cutting__pic icon-cut-06"></i>></span>
+                      <p class="cutting__desc">вестерн</p>
+                    </li>
+                    <li class="cutting__item" data-id="slider6"><span class="cutting__img">
+                        <<i class="cutting__pic icon-cut-07"></i>></<i class="cutting__pic icon-cut-07"></i>></span>
+                      <p class="cutting__desc">драконий зуб</p>
+                    </li>
+                    <li class="cutting__item" data-id="slider7"><span class="cutting__img">
+                        <<i class="cutting__pic icon-cut-08"></i>></<i class="cutting__pic icon-cut-08"></i>></span>
+                      <p class="cutting__desc">континент</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="assort">
+                  <div class="assort__wrap">
+                    <div class="assortment" id="slider0" data-up="0">
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>арахис</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>классик</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>румба</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/akkord/01.png"><img src="static/img/assortment/akkord/01.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>миндаль</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>классик</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>румба</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/akkord/02.png"><img src="static/img/assortment/akkord/02.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>мускат</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>классик</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>румба</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/akkord/03.png"><img src="static/img/assortment/akkord/03.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>дуб</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>ультра</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>фокстрот</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/akkord/04.png"><img src="static/img/assortment/akkord/04.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>кедр</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>ультра</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>фокстрот</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/akkord/05.png"><img src="static/img/assortment/akkord/05.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>миндаль</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>ультра</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>фокстрот</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/akkord/06.png"><img src="static/img/assortment/akkord/06.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>рябина</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>ультра</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>фокстрот</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/akkord/07.png"><img src="static/img/assortment/akkord/07.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>Сандал</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>ультра</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>фокстрот</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/akkord/08.png"><img src="static/img/assortment/akkord/08.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>терн</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>ультра</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>фокстрот</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/akkord/09.png"><img src="static/img/assortment/akkord/09.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>тополь</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>ультра</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>фокстрот</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/akkord/10.png"><img src="static/img/assortment/akkord/10.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>Эвкалипт</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>ультра</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>фокстрот</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/akkord/11.png"><img src="static/img/assortment/akkord/11.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>коричневый</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>финская</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>акорд</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/akkord/12.png"><img src="static/img/assortment/akkord/12.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>красный</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>финская</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>акорд</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/akkord/13.png"><img src="static/img/assortment/akkord/13.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>серый</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>финская</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>акорд</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/akkord/14.png"><img src="static/img/assortment/akkord/14.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                    </div>
+                    <div class="assortment" id="slider1" data-up="-555">
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>агат</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>классик</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Кадриль</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/sonata/01.png"><img src="static/img/assortment/sonata/01.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>гранат</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>классик</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Кадриль</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/sonata/02.png"><img src="static/img/assortment/sonata/02.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>Нефрит</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>классик</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Кадриль</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/sonata/03.png"><img src="static/img/assortment/sonata/03.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>Оникс</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>классик</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Кадриль</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/sonata/04.png"><img src="static/img/assortment/sonata/04.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>Турмалин</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>классик</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Кадриль</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/sonata/05.png"><img src="static/img/assortment/sonata/05.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>Яшма</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>классик</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Кадриль</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/sonata/06.png"><img src="static/img/assortment/sonata/06.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>Малахит</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Ультра</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>самба</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/sonata/07.png"><img src="static/img/assortment/sonata/07.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>рубин</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Ультра</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>самба</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/sonata/08.png"><img src="static/img/assortment/sonata/08.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>Янтарь</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Ультра</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>самба</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/sonata/09.png"><img src="static/img/assortment/sonata/09.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>зеленая</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Финская</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>соната</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/sonata/10.png"><img src="static/img/assortment/sonata/10.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>Коричневая</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Финская</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>соната</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/sonata/11.png"><img src="static/img/assortment/sonata/11.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>Крассная</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Финская</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>соната</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/sonata/12.png"><img src="static/img/assortment/sonata/12.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>Серая</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Финская</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>соната</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/sonata/13.png"><img src="static/img/assortment/sonata/13.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                    </div>
+                    <div class="assortment" id="slider2" data-up="-1110">
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>дюна</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>классик</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Модерн</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/briks/01.png"><img src="static/img/assortment/briks/01.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>ледник</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>классик</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Модерн</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/briks/02.png"><img src="static/img/assortment/briks/02.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>мрамор</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>классик</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Модерн</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/briks/03.png"><img src="static/img/assortment/briks/03.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>плато</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>классик</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Модерн</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/briks/04.png"><img src="static/img/assortment/briks/04.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                    </div>
+                    <div class="assortment" id="slider3" data-up="-1665">
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>кленовый</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>классик</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Танго</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/bobroviy_hvost/01.png"><img src="static/img/assortment/bobroviy_hvost/01.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>осенний</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>классик</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Танго</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/bobroviy_hvost/02.png"><img src="static/img/assortment/bobroviy_hvost/02.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>панговый</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>классик</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Танго</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/bobroviy_hvost/03.png"><img src="static/img/assortment/bobroviy_hvost/03.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>хвойный</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>классик</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Танго</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/bobroviy_hvost/04.png"><img src="static/img/assortment/bobroviy_hvost/04.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                    </div>
+                    <div class="assortment" id="slider4" data-up="-2220">
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>антик</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>классик</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Фламенко</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/trio/01.png"><img src="static/img/assortment/trio/01.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>арагон</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>классик</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Фламенко</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/trio/02.png"><img src="static/img/assortment/trio/02.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>валенсия</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>классик</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Фламенко</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/trio/03.png"><img src="static/img/assortment/trio/03.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>гранада</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>классик</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Фламенко</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/trio/04.png"><img src="static/img/assortment/trio/04.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>коричневый</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>классик</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Фламенко</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/trio/05.png"><img src="static/img/assortment/trio/05.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>толедо</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>классик</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Фламенко</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>однослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/trio/06.png"><img src="static/img/assortment/trio/06.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                    </div>
+                    <div class="assortment" id="slider5" data-up="-2775">
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>каньон</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Вестерн</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Вестерн</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Двухслойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/vestern/01.png"><img src="static/img/assortment/vestern/01.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>Клондайк</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Вестерн</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Вестерн</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Двухслойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/vestern/02.png"><img src="static/img/assortment/vestern/02.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>ниагара</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Вестерн</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Вестерн</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Двухслойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/vestern/03.png"><img src="static/img/assortment/vestern/03.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>прерия</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Вестерн</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Вестерн</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Двухслойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/vestern/04.png"><img src="static/img/assortment/vestern/04.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                    </div>
+                    <div class="assortment" id="slider6" data-up="-3330">
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>аликанте</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Джаз</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Джаз</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Двухслойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/drakon_zub/01.png"><img src="static/img/assortment/drakon_zub/01.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>барселона</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Джаз</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Джаз</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Двухслойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/drakon_zub/02.png"><img src="static/img/assortment/drakon_zub/02.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>индиго</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Джаз</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Джаз</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Двухслойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/drakon_zub/03.png"><img src="static/img/assortment/drakon_zub/03.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>кастилия</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Джаз</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Джаз</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Двухслойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/drakon_zub/04.png"><img src="static/img/assortment/drakon_zub/04.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>коррида</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Джаз</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Джаз</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Двухслойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/drakon_zub/05.png"><img src="static/img/assortment/drakon_zub/05.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>севилья</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Джаз</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Джаз</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Двухслойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/drakon_zub/06.png"><img src="static/img/assortment/drakon_zub/06.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>сицилия</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Джаз</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Джаз</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Двухслойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/drakon_zub/07.png"><img src="static/img/assortment/drakon_zub/07.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>терра</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Джаз</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Джаз</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Двухслойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/drakon_zub/08.png"><img src="static/img/assortment/drakon_zub/08.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>тоскана</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Джаз</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Джаз</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Двухслойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/drakon_zub/09.png"><img src="static/img/assortment/drakon_zub/09.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>алабама</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Кантри</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Кантри</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Двухслойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/drakon_zub/10.png"><img src="static/img/assortment/drakon_zub/10.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>аризона</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Кантри</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Кантри</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Двухслойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/drakon_zub/11.png"><img src="static/img/assortment/drakon_zub/11.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>атланта</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Кантри</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Кантри</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Двухслойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/drakon_zub/12.png"><img src="static/img/assortment/drakon_zub/12.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>индиана</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Кантри</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Кантри</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Двухслойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/drakon_zub/13.png"><img src="static/img/assortment/drakon_zub/13.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>мичиган</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Кантри</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Кантри</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Двухслойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/drakon_zub/14.png"><img src="static/img/assortment/drakon_zub/14.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>огайо</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Кантри</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Кантри</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Двухслойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/drakon_zub/15.png"><img src="static/img/assortment/drakon_zub/15.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>онтарио</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Кантри</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Кантри</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Двухслойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/drakon_zub/16.png"><img src="static/img/assortment/drakon_zub/16.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>техас</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Кантри</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Кантри</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Двухслойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/drakon_zub/17.png"><img src="static/img/assortment/drakon_zub/17.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>юта</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Кантри</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Кантри</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Двухслойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/drakon_zub/18.png"><img src="static/img/assortment/drakon_zub/18.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>бронзовый</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>ранчо</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>ранчо</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Двухслойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/drakon_zub/19.png"><img src="static/img/assortment/drakon_zub/19.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>коричневый</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>ранчо</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>ранчо</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Двухслойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/drakon_zub/20.png"><img src="static/img/assortment/drakon_zub/20.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>красный</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>ранчо</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>ранчо</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Двухслойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/drakon_zub/21.png"><img src="static/img/assortment/drakon_zub/21.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>серый</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>ранчо</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>ранчо</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Двухслойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/drakon_zub/22.png"><img src="static/img/assortment/drakon_zub/22.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                    </div>
+                    <div class="assortment" id="slider7" data-up="-3885">
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>азия</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Континент</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Континент</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Многослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/kontinent/01.png"><img src="static/img/assortment/kontinent/01.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>америка</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Континент</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Континент</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Многослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/kontinent/02.png"><img src="static/img/assortment/kontinent/02.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>африка</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Континент</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Континент</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Многослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/kontinent/03.png"><img src="static/img/assortment/kontinent/03.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                      <div class="assortment__slide">
+                        <div class="assortment__header">
+                          <ul class="assortment__list">
+                            <li class="assortment__item">
+                              <p>Цвет</p><strong>европа</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Серия</p><strong>Континент</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>Коллекция</p><strong>Континент</strong>
+                            </li>
+                            <li class="assortment__item">
+                              <p>тип</p><strong>Многослойная</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="assortment__pic" data-thumb="static/img/assortment/kontinent/04.png"><img src="static/img/assortment/kontinent/04.jpg" alt="изображение"><a class="assortment__btn" href="#"><span>купить</span><i></i></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="calculate"><a class="calculate__btn" href="#"><i class="icon-calc"></i><span>Рассчитать количество материала</span></a><a class="calculate__btn" href="#"><i class="icon-house"></i><span>Подобрать черепицу на модели дома</span></a></div>
+            </div>
+          </section>
+        </section>
+        <section id="s_seventh">
+          <section class="section">
+            <h3 class="section__title">Фотогалерея</h3>
+            <div class="gallery"><a class="gallery__link" href="static/img/gallery/01.jpg" data-fancybox="gallery">
+                <div class="shadow"></div><img src="static/img/gallery/01.jpg" alt="изображение"></a><a class="gallery__link" href="static/img/gallery/02.jpg" data-fancybox="gallery">
+                <div class="shadow"></div><img src="static/img/gallery/02.jpg" alt="изображение"></a><a class="gallery__link" href="static/img/gallery/03.jpg" data-fancybox="gallery">
+                <div class="shadow"></div><img src="static/img/gallery/03.jpg" alt="изображение"></a><a class="gallery__link" href="static/img/gallery/04.jpg" data-fancybox="gallery">
+                <div class="shadow"></div><img src="static/img/gallery/04.jpg" alt="изображение"></a><a class="gallery__link" href="static/img/gallery/05.jpg" data-fancybox="gallery">
+                <div class="shadow"></div><img src="static/img/gallery/05.jpg" alt="изображение"></a><a class="gallery__link" href="static/img/gallery/06.jpg" data-fancybox="gallery">
+                <div class="shadow"></div><img src="static/img/gallery/06.jpg" alt="изображение"></a><a class="gallery__link" href="static/img/gallery/07.jpg" data-fancybox="gallery">
+                <div class="shadow"></div><img src="static/img/gallery/07.jpg" alt="изображение"></a><a class="gallery__link" href="static/img/gallery/08.jpg" data-fancybox="gallery">
+                <div class="shadow"></div><img src="static/img/gallery/08.jpg" alt="изображение"></a><a class="gallery__link" href="static/img/gallery/08.jpg" data-fancybox="gallery">
+                <div class="shadow"></div><img src="static/img/gallery/08.jpg" alt="изображение"></a>
+            </div>
+          </section>
+        </section>
+        <section id="s_eighth">
+          <section class="map">
+            <div class="layout">
+              <h3 class="section__title mod_noul">
+                Где купить?<br><a class="cupon-top-link" href="#">Получить купон на скидку 10%</a></h3>
+              <div class="affiliate">
+                <div class="affiliate__item">
+                  <div class="affiliate__scroll">
+                    <div class="affiliate__header"><img src="static/img/budiva.jpg" alt=""></div>
+                    <div class="affiliate__content">
+                      <h6 class="affiliate__title"><a href="#">ООО «БУДИВА»</a></h6>
+                      <p>Днепропетровск, ул. Горького, 22</p>
+                      <p><a href="mailto:dnepr@budiva.ua">dnepr@budiva.ua</a></p>
+                      <p><a href="budiva.ua">budiva.ua</a></p>
+                      <p>+38 (056) 790-03-09</p>
+                      <p>+38 (067) 370-18-02</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="affiliate__item affiliate-dubl">
+                  <div class="affiliate__scroll">
+                    <div class="affiliate__content">
+                      <h6 class="affiliate__title"><a href="#">ООО «РКЦ-Буд»</a></h6>
+                      <p>Днепропетровск, пр. Гагарина, 90</p>
+                      <p><a href="dnepr@rkc.biz.ua">dnepr@rkc.biz.ua</a></p>
+                      <p><a href="rkcbud.com.ua">rkcbud.com.ua</a></p>
+                      <p><a href="e-cottage.dp.ua">e-cottage.dp.ua</a></p>
+                      <p>+38 (067) 636-76-49</p>
+                      <p>+38 (067) 636-83-43</p>
+                      <p>+38 (067) 633-60-17</p>
+                      <p>+38 (067) 636-83-43</p>
+                      <p>+38 (067) 633-60-17</p>
+                    </div>
+                  </div>
+                  <div class="affiliate__scroll">
+                    <div class="affiliate__content affiliate-filial">
+                      <div class="affiliate__heading"><strong>ФИЛИАЛЫ</strong></div><a class="affiliate__box" href="#">
+                        <h6 class="affiliate__title">Заблоцкий Андрей</h6>
+                        <p>Гомель</p>
+                        <p>127-38-20</p></a><a class="affiliate__box" href="#">
+                        <h6 class="affiliate__title">ИП Войтехович</h6>
+                        <p>Минск</p></a><a class="affiliate__box" href="#">
+                        <h6 class="affiliate__title">Заблоцкий Андрей</h6>
+                        <p>Гомель</p>
+                        <p>127-38-20</p></a><a class="affiliate__box" href="#">
+                        <h6 class="affiliate__title">ИП Войтехович</h6>
+                        <p>Минск</p></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="affiliate__item">
+                  <div class="affiliate__scroll">
+                    <div class="affiliate__content">
+                      <h6 class="affiliate__title"><a href="#">ООО «А-СТ»</a></h6>
+                      <p>Днепр, пр.им.газеты "Правда", 27</p>
+                      <p><a href="mailto:st_dnepr@ukr.net">ast_dnepr@ukr.net</a></p>
+                      <p>+38 (056) 373-25-79</p>
+                      <p>+38 (056) 373-25-88</p>
+                      <p>+38 (056) 373-25-89</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="affiliate__item">
+                  <div class="affiliate__scroll">
+                    <div class="affiliate__header"><img src="static/img/budiva.jpg" alt=""></div>
+                    <div class="affiliate__content">
+                      <h6 class="affiliate__title"><a href="#">ООО «БУДИВА»</a></h6>
+                      <p>Днепропетровск, ул. Горького, 22</p>
+                      <p><a href="mailto:dnepr@budiva.ua">dnepr@budiva.ua</a></p>
+                      <p><a href="budiva.ua">budiva.ua</a></p>
+                      <p>+38 (056) 790-03-09</p>
+                      <p>+38 (067) 370-18-02</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="affiliate__item affiliate-dubl">
+                  <div class="affiliate__scroll">
+                    <div class="affiliate__content">
+                      <h6 class="affiliate__title"><a href="#">ООО «РКЦ-Буд»</a></h6>
+                      <p>Днепропетровск, пр. Гагарина, 90</p>
+                      <p><a href="dnepr@rkc.biz.ua">dnepr@rkc.biz.ua</a></p>
+                      <p><a href="rkcbud.com.ua">rkcbud.com.ua</a></p>
+                      <p><a href="e-cottage.dp.ua">e-cottage.dp.ua</a></p>
+                      <p>+38 (067) 636-76-49</p>
+                      <p>+38 (067) 636-83-43</p>
+                      <p>+38 (067) 633-60-17</p>
+                      <p>+38 (067) 636-83-43</p>
+                      <p>+38 (067) 633-60-17</p>
+                    </div>
+                  </div>
+                  <div class="affiliate__scroll">
+                    <div class="affiliate__content affiliate-filial">
+                      <div class="affiliate__heading"><strong>ФИЛИАЛЫ</strong></div><a class="affiliate__box" href="#">
+                        <h6 class="affiliate__title">Заблоцкий Андрей</h6>
+                        <p>Гомель</p>
+                        <p>127-38-20</p></a><a class="affiliate__box" href="#">
+                        <h6 class="affiliate__title">ИП Войтехович</h6>
+                        <p>Минск</p></a><a class="affiliate__box" href="#">
+                        <h6 class="affiliate__title">Заблоцкий Андрей</h6>
+                        <p>Гомель</p>
+                        <p>127-38-20</p></a><a class="affiliate__box" href="#">
+                        <h6 class="affiliate__title">ИП Войтехович</h6>
+                        <p>Минск</p></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="affiliate__item">
+                  <div class="affiliate__scroll">
+                    <div class="affiliate__content">
+                      <h6 class="affiliate__title"><a href="#">ООО «А-СТ»</a></h6>
+                      <p>Днепр, пр.им.газеты "Правда", 27</p>
+                      <p><a href="mailto:st_dnepr@ukr.net">ast_dnepr@ukr.net</a></p>
+                      <p>+38 (056) 373-25-79</p>
+                      <p>+38 (056) 373-25-88</p>
+                      <p>+38 (056) 373-25-89</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="affiliate__item">
+                  <div class="affiliate__scroll">
+                    <div class="affiliate__header"><img src="static/img/budiva.jpg" alt=""></div>
+                    <div class="affiliate__content">
+                      <h6 class="affiliate__title"><a href="#">ООО «БУДИВА»</a></h6>
+                      <p>Днепропетровск, ул. Горького, 22</p>
+                      <p><a href="mailto:dnepr@budiva.ua">dnepr@budiva.ua</a></p>
+                      <p><a href="budiva.ua">budiva.ua</a></p>
+                      <p>+38 (056) 790-03-09</p>
+                      <p>+38 (067) 370-18-02</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="affiliate__item affiliate-dubl">
+                  <div class="affiliate__scroll">
+                    <div class="affiliate__content">
+                      <h6 class="affiliate__title"><a href="#">ООО «РКЦ-Буд»</a></h6>
+                      <p>Днепропетровск, пр. Гагарина, 90</p>
+                      <p><a href="dnepr@rkc.biz.ua">dnepr@rkc.biz.ua</a></p>
+                      <p><a href="rkcbud.com.ua">rkcbud.com.ua</a></p>
+                      <p><a href="e-cottage.dp.ua">e-cottage.dp.ua</a></p>
+                      <p>+38 (067) 636-76-49</p>
+                      <p>+38 (067) 636-83-43</p>
+                      <p>+38 (067) 633-60-17</p>
+                      <p>+38 (067) 636-83-43</p>
+                      <p>+38 (067) 633-60-17</p>
+                    </div>
+                  </div>
+                  <div class="affiliate__scroll">
+                    <div class="affiliate__content affiliate-filial">
+                      <div class="affiliate__heading"><strong>ФИЛИАЛЫ</strong></div><a class="affiliate__box" href="#">
+                        <h6 class="affiliate__title">Заблоцкий Андрей</h6>
+                        <p>Гомель</p>
+                        <p>127-38-20</p></a><a class="affiliate__box" href="#">
+                        <h6 class="affiliate__title">ИП Войтехович</h6>
+                        <p>Минск</p></a><a class="affiliate__box" href="#">
+                        <h6 class="affiliate__title">Заблоцкий Андрей</h6>
+                        <p>Гомель</p>
+                        <p>127-38-20</p></a><a class="affiliate__box" href="#">
+                        <h6 class="affiliate__title">ИП Войтехович</h6>
+                        <p>Минск</p></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="affiliate__item">
+                  <div class="affiliate__scroll">
+                    <div class="affiliate__content">
+                      <h6 class="affiliate__title"><a href="#">ООО «А-СТ»</a></h6>
+                      <p>Днепр, пр.им.газеты "Правда", 27</p>
+                      <p><a href="mailto:st_dnepr@ukr.net">ast_dnepr@ukr.net</a></p>
+                      <p>+38 (056) 373-25-79</p>
+                      <p>+38 (056) 373-25-88</p>
+                      <p>+38 (056) 373-25-89</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="affiliate__item">
+                  <div class="affiliate__scroll">
+                    <div class="affiliate__header"><img src="static/img/budiva.jpg" alt=""></div>
+                    <div class="affiliate__content">
+                      <h6 class="affiliate__title"><a href="#">ООО «БУДИВА»</a></h6>
+                      <p>Днепропетровск, ул. Горького, 22</p>
+                      <p><a href="mailto:dnepr@budiva.ua">dnepr@budiva.ua</a></p>
+                      <p><a href="budiva.ua">budiva.ua</a></p>
+                      <p>+38 (056) 790-03-09</p>
+                      <p>+38 (067) 370-18-02</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="affiliate__item affiliate-dubl">
+                  <div class="affiliate__scroll">
+                    <div class="affiliate__content">
+                      <h6 class="affiliate__title"><a href="#">ООО «РКЦ-Буд»</a></h6>
+                      <p>Днепропетровск, пр. Гагарина, 90</p>
+                      <p><a href="dnepr@rkc.biz.ua">dnepr@rkc.biz.ua</a></p>
+                      <p><a href="rkcbud.com.ua">rkcbud.com.ua</a></p>
+                      <p><a href="e-cottage.dp.ua">e-cottage.dp.ua</a></p>
+                      <p>+38 (067) 636-76-49</p>
+                      <p>+38 (067) 636-83-43</p>
+                      <p>+38 (067) 633-60-17</p>
+                      <p>+38 (067) 636-83-43</p>
+                      <p>+38 (067) 633-60-17</p>
+                    </div>
+                  </div>
+                  <div class="affiliate__scroll">
+                    <div class="affiliate__content affiliate-filial">
+                      <div class="affiliate__heading"><strong>ФИЛИАЛЫ</strong></div><a class="affiliate__box" href="#">
+                        <h6 class="affiliate__title">Заблоцкий Андрей</h6>
+                        <p>Гомель</p>
+                        <p>127-38-20</p></a><a class="affiliate__box" href="#">
+                        <h6 class="affiliate__title">ИП Войтехович</h6>
+                        <p>Минск</p></a><a class="affiliate__box" href="#">
+                        <h6 class="affiliate__title">Заблоцкий Андрей</h6>
+                        <p>Гомель</p>
+                        <p>127-38-20</p></a><a class="affiliate__box" href="#">
+                        <h6 class="affiliate__title">ИП Войтехович</h6>
+                        <p>Минск</p></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="affiliate__item">
+                  <div class="affiliate__scroll">
+                    <div class="affiliate__content">
+                      <h6 class="affiliate__title"><a href="#">ООО «А-СТ»</a></h6>
+                      <p>Днепр, пр.им.газеты "Правда", 27</p>
+                      <p><a href="mailto:st_dnepr@ukr.net">ast_dnepr@ukr.net</a></p>
+                      <p>+38 (056) 373-25-79</p>
+                      <p>+38 (056) 373-25-88</p>
+                      <p>+38 (056) 373-25-89</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="map"></div>
+          </section>
+        </section>
+        <section id="s_nineth">
+          <footer class="footer">
+            <div class="layout__inner">
+              <div class="definition">
+                <div class="head"><a class="logo" href="/"><img src="static/img/logo-footer.svg" alt="logo"></a>
+                  <div class="select js-select">
+                    <div class="select__text js-select-text"><img src="static/img/flag-ua.jpg" alt="ua"><span>Укр</span></div>
+                    <input class="js-select-input" type="hidden" value="">
+                    <ul class="select__list js-select-list">
+                      <li data-id="0"><img src="static/img/flag-ru.jpg" alt="ru"><span>рус</span></li>
+                      <li data-id="1"><img src="static/img/flag-en.png" alt="en"><span>en</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <nav class="navigate">
+                  <ul class="menu">
+                    <li class="menu__list"><a class="menu__link" href="#">Статьи</a></li>
+                    <li class="menu__list"><a class="menu__link red_item" href="#">С к и д к и<span> %</span></a></li>
+                    <li class="menu__list is_active"><a class="menu__link" href="#">Мнение домовладельцев</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#">Преимущества</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#">Ассортимент</a></li>
+                    <li class="menu__list"><a class="menu__link" href="#">Контакты</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="dev">
+                <div class="copy">2010 – 2017 Корпорация «ТЕХНОНИКОЛЬ». <br>   Все права защищены.</div>
+                <div class="developer">
+                  <p>Разработка <br> сайта</p><a href="#">MINISOL</a>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </section>
+      </div>
+      <div class="nav_scroll"><a class="nav_scroll__btn nav_scroll__btn_up" href="#"><i class="icon-up"></i><span>Вверх</span></a><a class="nav_scroll__btn nav_scroll__btn_down" href="#"><i class="icon-down"></i><span>Вниз</span></a></div>
+    </div>
+    <!--END out-->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="static/js/lib/mapster.js"></script>
+    <script src="static/js/mapOptions.js"></script>
+    <script src="static/js/map.js"></script>
+  </body>
+</html>
